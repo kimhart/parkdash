@@ -8,8 +8,7 @@ Welcome to ParkDash, an interactive dashboard of grab-and-go information about e
 ### Technologies Used
 
 * MEAN (MongoDB, Express, Angular.js, Node.js)
-* Javascript
-* jQuery
+* Javascript/jQuery
 * HTML
 * CSS
 
