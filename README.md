@@ -26,10 +26,6 @@ While interacting with this app, users should be able to:
 
 
 
-### ERD
-
-TBD
-
 ### Front-end Wireframes
 
 TBD
