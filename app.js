@@ -24,3 +24,17 @@ MongoClient.connect(mongoUrl, function(err, database){
 app.get('/', function(req,res){
   res.render('index');
 });
+
+app.get('/:park_name', function(req, res){
+  res.render('park_show');
+}
+
+
+
+
+
+
+
+
+
+
