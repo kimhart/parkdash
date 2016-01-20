@@ -32,5 +32,5 @@ Welcome to ParkDash, an interactive dashboard of grab-and-go information about e
 
 ### Front-End Wireframes
 
-![ParkDash Wireframe](/ParkDash Wireframe.png)
+![ParkDash Wireframe](public/img/ParkDash Wireframe.png)
 
