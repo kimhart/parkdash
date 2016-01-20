@@ -2,8 +2,9 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
-var mongoUrl = 'mongodb://localhost:27017/bikeEvents';
+var mongoUrl = 'mongodb://localhost:27017/parkdash';
 var ObjectId = require('mongodb').ObjectId;
+var bootstrap = require('bootstrap');
 
 var db;
  
@@ -22,12 +23,20 @@ MongoClient.connect(mongoUrl, function(err, database){
 });
 
 app.get('/', function(req,res){
-  res.render('index');
+  res.render('index')
 });
 
-app.get('/:park_name', function(req, res){
-  res.render('park_show');
-}
+
+// app.get('/:name', function(req, res){
+//   db.collection('parks').findOne({name: req.params.name},function(err,result){
+//     res.json(result);
+//   })
+// });
+
+
+
+app.listen(process.env.PORT || 9292);
+
 
 
 

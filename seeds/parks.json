@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Yosemite",
+    "state": "California",
+    "established": 1890,
+    "images": ["http://www.craigwolf.com/news/uploaded_images/WY5T6500-747443.jpg", "https://9to5mac.files.wordpress.com/2014/08/yosemite-2.jpg", "http://footage.framepool.com/shotimg/qf/662510359-yosemite-falls-bridalveil-falls-yosemite-yosemite-national-park-nature-reserve.jpg"],
+    "comments": [{
+      "first_name": "Kim",
+      "last_name": "H",
+      "comment": "One of my favorite places on earth."
+      }]
+    },
+    {
+    "name": "Bryce Canyon",
+    "state": "Utah",
+    "established": 1928,
+    "images": ["http://www.sandhollowresorts.com/wp-content/uploads/2015/01/Bryce-Canyon-11.jpg", "https://upload.wikimedia.org/wikipedia/commons/0/0f/Natural_bridge_in_Bryce_Canyon.jpg", "http://brycezioninn.com/wp-content/uploads/2014/06/pines-of-bryce-canyon-national-Park.jpg"],
+    "comments": [{
+      "first_name": "P.",
+      "last_name": "Sherman",
+      "comment": "This place is super rad!"
+      }]
+    },
+    {
+    "name": "Death Valley",
+    "state": "Nevada",
+    "established": 1933,
+    "images": ["http://www.sbcc.edu/earthscience/images/Death-Valley-Sunset-prints.jpg", "http://edu-geography.com/data_images/countries/death-valley/death-valley-05.jpg", "https://robertfinkelstein.files.wordpress.com/2009/06/death-valley-national-park-california.jpg"],
+    "comments": [{
+      "first_name": "Greg",
+      "last_name": "Hart",
+      "comment": "It was 125 degrees and our car almost overheated and broke down. Not a great experience."
+      }, 
+      {
+      "first_name": "Claire",
+      "last_name": "H",
+      "comment": "Looks like the surface of the moon. Really cool!"
+      }]
+    },
+    {
+    "name": "Joshua Tree",
+    "state": "California",
+    "established": 1994,
+    "images": ["http://images5.alphacoders.com/515/515766.jpg", "http://i.imgur.com/TcdQ7lA.jpg", "http://kylehammons.com/blog/wp-content/uploads/2010/08/20100801_JoshuaTreeSunset_HDR_01-Edit.jpg"],
+    "comments": [{
+      "first_name": "Chris",
+      "last_name": "Johnson",
+      "comment": "Legendary."
+      }, 
+      {
+      "first_name": "Tom",
+      "last_name": "Smith",
+      "comment": "Easily my favorite place to shroom at."
+      }]
+    },
+    {
+    "name": "Redwood",
+    "state": "California",
+    "established": 1968,
+    "images": ["http://cdn.aarp.net/content/dam/travel/destination-images/redwood-national-park/2014-01/1400-redwood-national-park-california-trees.imgcache.rev1414179056909.web.1400.720.jpg", "http://cdn4.vtourist.com/19/7075318-Another_car_entering_behind_me_Yosemite_National_Park.jpg?version=2", "https://i.ytimg.com/vi/mQ9eLedGeBs/maxresdefault.jpg"],
+    "comments": [{
+      "first_name": "Juliette",
+      "last_name": "Garner",
+      "comment": "I've never felt so small! Driving through the tree was a plus."
+      }]
+    },
+    {
+    "name": "Sequoia and Kings Canyon",
+    "state": "California",
+    "established": 1940,
+    "images": ["https://calizee.files.wordpress.com/2015/05/canyon-national-park-1.jpg","http://1.bp.blogspot.com/--thukFs279I/Uaji8Ye5hnI/AAAAAAAAAkw/Obn0h_GuPbA/s1600/The-Big-Room-at-Carlsbad-Caverns-National-Park.jpg", "http://www.journeysinlightphotoblog.net/wp-content/uploads/2013/07/kings-canyon-kearsarge-pinnacles-lakes-1.jpg"],
+    "comments": [{
+      "first_name": "Kim",
+      "last_name": "Hart",
+      "comment": "Find the caves, they're amazing!"
+      }]
+    }
+]
