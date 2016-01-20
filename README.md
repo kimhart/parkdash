@@ -21,12 +21,11 @@ While interacting with this app, users should be able to:
 * Select a specific park to view a dashboard overview of information.
 * View a weather forecast for the park.
 * View Google maps version of trail maps, interact with map in real-time.
-* Open a gallery of photos from each park in a modal format.
-* TBD
+* Click rolling photos at top of page to open a gallery of photos from each park in a modal format.
+* See a live Instagram feed of photos tagged at the park.
 
 
+### Front-End Wireframes
 
-### Front-end Wireframes
-
-TBD
+![ParkDash Wireframe](/ParkDash Wireframe.png)
 
