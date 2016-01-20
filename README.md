@@ -15,7 +15,7 @@ Welcome to ParkDash, an interactive dashboard of grab-and-go information about e
 
 ### User Stories
 
-While interacting with this app, users should be able to:
+#### MVP
 
 * Visit a home page with a list of parks and a search function.
 * Select a specific park to view a dashboard overview of information.
@@ -24,6 +24,11 @@ While interacting with this app, users should be able to:
 * Click rolling photos at top of page to open a gallery of photos from each park in a modal format.
 * See a live Instagram feed of photos tagged at the park.
 
+#### Ultimate Goals
+
+* Receive a text notification when there is severe weather, a trail closes, the park closes unexpectedly, or an emergency occurs.
+* Be able to search ANY park from a complete API/database (rather than a pre-seeded version of a few parks)
+* See campground information, link to sites to book.
 
 ### Front-End Wireframes
 
