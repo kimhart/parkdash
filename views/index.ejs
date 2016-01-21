@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ParksApp">
 <head>
   <title>ParkDash</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
-  <script src="public/js/main.js"></script>
-  <link rel="stylesheet" href="public/css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/parks_controller.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>Welcome to ParkDash</h1>
-  <p>1 + 2 = {{ 1 + 2 }}</p>
-  <script id="sighting-info" type="sighting-template">
+  <div ng-controller="ParksController as parks">
     <ul>
-     <li>{{name}}</li>
+     <li ng-repeat="park in parks.all track by $index">{{park.name}}</li>
     </ul>
-  </script>
+  </div>
 </body>
 </html>

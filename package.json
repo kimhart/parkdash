@@ -19,7 +19,6 @@
   "homepage": "https://github.com/kimhart/parkdash#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
-    "bootstrap": "^3.3.6",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "handlebars": "^4.0.5",
