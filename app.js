@@ -16,28 +16,38 @@ MongoClient.connect(mongoUrl, function(err, database){
   if(err){
     console.log(err);
   }
-  console.log('connected');
   db = database;
   process.on("exit", db.close); 
 });
 
 app.get('/', function(req,res){
-  res.render('index')
+   db.collection('parks').find({}).toArray(function(err, result){
+     res.render('index', {parks: result})
+  })
 });
 
+app.get('/parks/:name', function(req,res){
+  res.render('show_park', {parkName: req.params.name});
+})
 
-app.get('/parks', function(req,res){
-  db.collection('parks').find({}).toArray(function(err, result){
-      res.json(result);
+app.get('/api/parks', function(req,res){
+   db.collection('parks').find({}).toArray(function(err, result){
+     res.json(result)
+  })
+});
+
+app.get('/api/:name', function(req,res){
+  db.collection('parks').findOne({name: req.params.name}, function(err, result){
+     console.log(result)
+     res.json(result);
     });
 });
 
 
-// app.get('/:name', function(req, res){
-//   db.collection('parks').findOne({name: req.params.name},function(err,result){
-//     res.json(result);
-//   })
-// });
+
+
+
+
 
 
 

@@ -7,13 +7,15 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/main.js"></script>
   <script src="js/parks_controller.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <h1>Welcome to ParkDash</h1>
   <div ng-controller="ParksController as parks">
     <ul>
-     <li ng-repeat="park in parks.all track by $index">{{park.name}}</li>
+      <li ng-repeat="park in parks.all track by $index">
+        <p ng-click="parks.show(park)">{{park.name}}</p>
+      </li>
     </ul>
   </div>
 </body>
