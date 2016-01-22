@@ -9,6 +9,7 @@ function ParksController($http) {
 
   parks.all = [];
 
+
   parks.selected = {};
 
   parks.fetch = function(){
@@ -27,6 +28,14 @@ function ParksController($http) {
     // show info for this park;
     // or change location
   };
+
+  parks.select = function(park){
+    parks.selected = park;
+  }
+  
+  parks.isSelected = function(){
+    return parks.selected != undefined;
+  }
 
 
   parks.fetch();
