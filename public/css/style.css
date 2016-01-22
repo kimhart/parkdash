@@ -1,3 +1,29 @@
-body {
-  background-color: white;
+body { 
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.main {
+  background-color: white;
+  font-family: helvetica;
+  width: 100%;
+  padding: 30px;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+}
+
+.park-photo {
+  width: 400px;
+  height: auto;
+}
+
+h1 {
+  color: white;
+}
+

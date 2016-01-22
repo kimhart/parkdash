@@ -10,35 +10,42 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <h1>Welcome to ParkDash</h1>
-  <div ng-controller="ParksController as parks">
-    <ul>
-      <li ng-repeat="park in parks.all track by $index">
-        <p ng-click="parks.show(park)">{{park.name}}</p>
-      </li>
-    </ul>
-     <ng-switch on="parks.isSelected()">
-     <div ng-switch-when="true">
-      <h2>The deets</h2>
-       {{parks.selected.state}}
-      <br>
-       {{parks.selected.established}}
-      <br>
-       {{parks.selected.headline}}
-      <br>
-       {{parks.selected.bio}}
-      <br>
-      <script id="images" type="text/x-handlebars-template">
-      <img {{bind-attr src="parks.selected.images[0]"}}>
-      <br>
-       <img {{bind-attr src="parks.selected.images[1]"}}>
-      <br>
-       <img {{bind-attr src="parks.selected.images[2]"}}>
-      </script>
-     </div>
-    </ng-switch>
-  </div>
-    
-  </div>
-</body>
+  <header>
+    <div class="parkdash-logo">
+      <h1>ParkDash</h1>
+    </div>
+  </header>
+  <div class="main">
+    <div ng-controller="ParksController as parks">
+      <ul>
+        <li ng-repeat="park in parks.all track by $index">
+          <p ng-click="parks.show(park)">{{park.name}}</p>
+        </li>
+      </ul>
+       <ng-switch on="parks.isSelected()">
+       <div ng-switch-when="true">
+        <h2>The deets</h2>
+         {{parks.selected.state}}
+        <br>
+         {{parks.selected.established}}
+        <br>
+         {{parks.selected.headline}}
+        <br>
+         {{parks.selected.bio}}
+        <br>
+         {{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}
+        <br>
+        {{parks.selected.comments[0].comment}}
+        <br>
+        <img class="park-photo" src="{{parks.selected.images[0]}}"}}>
+        <br>
+        <img class="park-photo" src="{{parks.selected.images[1]}}"}}>
+        <br>
+        <img class="park-photo" src="{{parks.selected.images[2]}}"}}>
+       </div>
+      </ng-switch>
+    </div>
+    </div>
+    </div>
+  </body>
 </html>
