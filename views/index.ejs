@@ -15,16 +15,17 @@
       <h1>ParkDash</h1>
     </div>
   </header>
-  <div class="main">
-    <div ng-controller="ParksController as parks">
-      <ul>
-        <li ng-repeat="park in parks.all track by $index">
-          <p ng-click="parks.show(park)">{{park.name}}</p>
-        </li>
-      </ul>
-       <ng-switch on="parks.isSelected()">
-       <div ng-switch-when="true">
-        <h2>The deets</h2>
+  <div ng-controller="ParksController as parks">
+    <ul>
+      <li ng-repeat="park in parks.all track by $index">
+      <p ng-click="parks.show(park)">{{park.name}}</p>
+      </li>
+    </ul>
+    <ng-switch on="parks.isSelected()">
+     <div ng-switch-when="true">
+      <h2>The deets</h2>
+        {{parks.selected.name}}
+        <br>
          {{parks.selected.state}}
         <br>
          {{parks.selected.established}}
@@ -35,17 +36,17 @@
         <br>
          {{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}
         <br>
-        {{parks.selected.comments[0].comment}}
+          {{parks.selected.comments[0].comment}}
         <br>
         <img class="park-photo" src="{{parks.selected.images[0]}}"}}>
         <br>
         <img class="park-photo" src="{{parks.selected.images[1]}}"}}>
         <br>
         <img class="park-photo" src="{{parks.selected.images[2]}}"}}>
-       </div>
-      </ng-switch>
+    <div id="map">
     </div>
+    </ng-switch>
     </div>
-    </div>
-  </body>
+  </div>
+</body>
 </html>

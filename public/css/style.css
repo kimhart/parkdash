@@ -1,5 +1,5 @@
 body { 
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,3 +27,8 @@ h1 {
   color: white;
 }
 
+#map {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+}
