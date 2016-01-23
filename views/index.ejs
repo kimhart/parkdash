@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="ParksApp">
 <head>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
   <title>ParkDash</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
   <script src="js/parks_controller.js"></script>
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -15,6 +18,7 @@
       <h1>ParkDash</h1>
     </div>
   </header>
+  <div id="map"></div>
   <div ng-controller="ParksController as parks">
     <ul>
       <li ng-repeat="park in parks.all track by $index">
@@ -43,10 +47,10 @@
         <img class="park-photo" src="{{parks.selected.images[1]}}"}}>
         <br>
         <img class="park-photo" src="{{parks.selected.images[2]}}"}}>
-    <div id="map">
-    </div>
     </ng-switch>
     </div>
   </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDabLO9WhXWJ5fRl9LiNFoo4uE5fLQe51I&callback=initMap"
+    async defer></script>
 </body>
 </html>

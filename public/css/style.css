@@ -1,9 +1,21 @@
-body { 
+/*body { 
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+*/
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 400px;
 }
 
 .main {
@@ -27,8 +39,5 @@ h1 {
   color: white;
 }
 
-#map {
-  width: 500px;
-  height: 400px;
-  background-color: #CCC;
-}
+
+
