@@ -8,8 +8,9 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/map.js"></script>
   <script src="js/parks_controller.js"></script>
+  <script src="js/park.js"></script>
+  <script src="js/cycle.js"></script>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -18,15 +19,18 @@
       <h1>ParkDash</h1>
     </div>
   </header>
-  <div ng-controller="ParksController as parks">
-    <ul>
-      <li ng-repeat="park in parks.all track by $index">
-      <p ng-click="parks.show(park); parks.initMap()">{{park.name}}</p>
-      </li>
-    </ul>
-    <ng-switch on="parks.isSelected()">
-     <div ng-switch-when="true">
-      <h2>{{parks.selected.name}}</h2>
+  <div class="grid" ng-controller="ParksController as parks">
+    <div class="sidebar">
+      <ul>
+        <li ng-repeat="park in parks.all track by $index">
+        <p ng-click="parks.show(park); parks.initMap(); parks.showInsta()">{{park.name}}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <ng-switch on="parks.isSelected()">
+       <div ng-switch-when="true">        
+        <h2>{{parks.selected.name}}</h2>
         <br>
          {{parks.selected.state}}
         <br>
@@ -40,16 +44,22 @@
         <br>
           {{parks.selected.comments[0].comment}}
         <br>
-        <!-- <img class="park-photo" src="{{parks.selected.images[0]}}"}}>
-        <br>
-        <img class="park-photo" src="{{parks.selected.images[1]}}"}}>
-        <br>
-        <img class="park-photo" src="{{parks.selected.images[2]}}"}}> -->
+        <div class="slideshow">
+        <h2 class="park-name">{{parks.selected.name}}</h2>
+          <img class="bgM" src="{{parks.selected.images[0]}}"}}>
+          <br>
+          <img class="bgM" src="{{parks.selected.images[1]}}"}}>
+          <br>
+          <img class="bgM" src="{{parks.selected.images[2]}}"}}>
+        </div>
         <div id="map"></div>
+        <div id="instagram-div"></div>
+      </div>
       </ng-switch>
     </div>
   </div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDabLO9WhXWJ5fRl9LiNFoo4uE5fLQe51I"
     async defer></script>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>'
 </body>
 </html>

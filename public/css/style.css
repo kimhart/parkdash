@@ -30,14 +30,40 @@ header {
   height: 100px;
 }
 
-.park-photo {
-  width: 400px;
-  height: auto;
-}
-
 h1 {
   color: white;
 }
+
+.instagram-div {
+  width: 300px;
+  height: auto;
+}
+
+.grid {
+  width: 100%;
+}
+
+.sidebar {
+  width: 25%;
+}
+
+.main {
+  width: 75%;
+}
+
+.slideshow, img.bgM {
+  height: 500px;
+  width: 700px;
+  height: auto;
+  display: block;
+}
+
+
+h2.parkname {
+  z-index: 7;
+}
+
+
 
 
 
