@@ -1,4 +1,3 @@
-console.log('parks controller says h3ll0')
 angular.module('ParksApp').controller('ParksController', ParksController);
 
 ParksController.$inject = ['$http'];
@@ -13,7 +12,6 @@ function ParksController($http) {
   parks.selected = {};
 
   parks.fetch = function(){
-    console.log('fetching...');
     $http
       .get('/api/parks')
       .then(function(response){
@@ -24,7 +22,6 @@ function ParksController($http) {
 
   parks.show = function(park){
     parks.selected = park;
-    console.log(park);
   };
 
   parks.select = function(park){
@@ -35,11 +32,21 @@ function ParksController($http) {
     return parks.selected != undefined;
   }
 
+  var map;
+
+  parks.initMap = function() {
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: parks.selected.latitude , lng: parks.selected.longitude},
+    zoom: 8
+    });
+  };
 
 
   parks.fetch();
 
+
 };
+
 
 
 

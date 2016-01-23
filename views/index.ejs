@@ -18,17 +18,15 @@
       <h1>ParkDash</h1>
     </div>
   </header>
-  <div id="map"></div>
   <div ng-controller="ParksController as parks">
     <ul>
       <li ng-repeat="park in parks.all track by $index">
-      <p ng-click="parks.show(park)">{{park.name}}</p>
+      <p ng-click="parks.show(park); parks.initMap()">{{park.name}}</p>
       </li>
     </ul>
     <ng-switch on="parks.isSelected()">
      <div ng-switch-when="true">
-      <h2>The deets</h2>
-        {{parks.selected.name}}
+      <h2>{{parks.selected.name}}</h2>
         <br>
          {{parks.selected.state}}
         <br>
@@ -42,15 +40,16 @@
         <br>
           {{parks.selected.comments[0].comment}}
         <br>
-        <img class="park-photo" src="{{parks.selected.images[0]}}"}}>
+        <!-- <img class="park-photo" src="{{parks.selected.images[0]}}"}}>
         <br>
         <img class="park-photo" src="{{parks.selected.images[1]}}"}}>
         <br>
-        <img class="park-photo" src="{{parks.selected.images[2]}}"}}>
-    </ng-switch>
+        <img class="park-photo" src="{{parks.selected.images[2]}}"}}> -->
+        <div id="map"></div>
+      </ng-switch>
     </div>
   </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDabLO9WhXWJ5fRl9LiNFoo4uE5fLQe51I&callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDabLO9WhXWJ5fRl9LiNFoo4uE5fLQe51I"
     async defer></script>
 </body>
 </html>
