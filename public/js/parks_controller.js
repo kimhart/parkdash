@@ -40,6 +40,29 @@ function ParksController($http) {
     });
   };
 
+  parks.getWeather = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.state+"/"+parks.selected.name+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      console.log(parsed_json)
+
+      var temp_f = parsed_json['current_observation']['temp_f'];
+      var temp_c = parsed_json['current_observation']['temp_c'];
+      var weather = parsed_json['current_observation']['weather'];
+      var wind = parsed_json['current_observation']['wind_mph'];
+      var icon = parsed_json['current_observation']['icon_url'];
+      var feelsLikeTempF = parsed_json['current_observation']['feelslike_f'];
+      var feelsLikeTempC = parsed_json['current_observation']['feelslike_c'];
+
+      var $currentTempDiv = $('.actual-temp').html(temp_f + '&#176 F / ' + temp_c + ' &#176 C');
+      var $feelsLikeDiv = $('.feels-like').html(feelsLikeTempF + '&#176 F / ' + feelsLikeTempC + ' &#176 C');
+      var $iconDiv = $('#weather-icon').html("<img src='" + icon + "'>");
+      var $condition = $('#weather-condition').html("<p>" + weather + "</p>");
+      }
+    });
+  }
+
   parks.showInsta = function(event){
     if(parks.selected.name === 'YOSEMITE'){
       var instaDiv = document.getElementById('instagram-div');

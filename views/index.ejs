@@ -28,7 +28,7 @@
           <h4 class="modal-title"><strong>Explore:</strong></h4>
         </div>
       <div class="modal-body">
-        <li class="parks-in-modal" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta()" data-dismiss="modal">{{park.name}}</li>
+        <li class="parks-in-modal" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather()" data-dismiss="modal">{{park.name}}</li>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
         <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
         <span class="caret"></span></button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta()">{{park.name}}</li>
+          <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather()">{{park.name}}</li>
         </ul>
       </div>
     </div>
@@ -89,6 +89,16 @@
             <div class="overlay">
               <h3 style="font-family: 'Fjalla One', sans-serif;">{{parks.selected.headline}}</h3>
               <p>{{parks.selected.bio}}</p>
+            </div>
+          </div>
+          <div class="weather-container">
+            <div id="current-temp-div">
+              <h3 class="current">CURRENTLY</h3>
+              <div id="weather-condition"></div>
+              <div id="weather-icon"></div>
+              <p class="actual-temp"></p>
+              <h3 class="current">Feels like:</h3>
+              <p class="feels-like"></p>
             </div>
           </div>
           <div id="map"></div>

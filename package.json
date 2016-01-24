@@ -25,6 +25,7 @@
     "handlebars": "^4.0.5",
     "instagram-node": "^0.5.8",
     "mongo": "^0.1.0",
-    "seeds": "^2.0.6"
+    "seeds": "^2.0.6",
+    "wundergroundnode": "^0.9.0"
   }
 }

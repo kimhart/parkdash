@@ -4,7 +4,9 @@ var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 var mongoUrl = 'mongodb://localhost:27017/parkdash';
 var ObjectId = require('mongodb').ObjectId;
-var ig = require('instagram-node').instagram();
+var Wunderground = require('wundergroundnode');
+var myKey = 'f7c25337aea3b20c';
+var wunderground = new Wunderground(myKey);
 
 var db;
  
@@ -45,9 +47,6 @@ app.get('/api/:name', function(req,res){
      res.json(result);
     });
 });
-
-
-
 
 
 
