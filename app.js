@@ -12,9 +12,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
-ig.use({ access_token: 'YOUR_ACCESS_TOKEN' });
-ig.use({ client_id: 'YOUR_CLIENT_ID',
-         client_secret: 'YOUR_CLIENT_SECRET' });
 
 
 

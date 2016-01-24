@@ -11,5 +11,11 @@ $(document).ready(function(){
   });
 
 
+  var showModal = function(){
+    $('#hello-modal').modal('show');
+  };
+  showModal();
+  
+
 
 });
