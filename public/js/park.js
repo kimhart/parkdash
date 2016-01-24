@@ -6,7 +6,8 @@ $(document).ready(function(){
     fx: 'fade',
     pause:   1,
     speed: 4000,
-    timeout:  3500
+    timeout:  3500,
+    startingSlide: 0
   });
 
 

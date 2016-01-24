@@ -7,56 +7,70 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/parks_controller.js"></script>
   <script src="js/park.js"></script>
   <script src="js/cycle.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
   <link rel="stylesheet" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <header>
-    <div class="parkdash-logo">
-      <h1>ParkDash</h1>
-    </div>
-  </header>
   <div class="grid" ng-controller="ParksController as parks">
-    <div class="sidebar">
-      <ul>
-        <li ng-repeat="park in parks.all track by $index">
-        <p ng-click="parks.show(park); parks.initMap(); parks.showInsta()">{{park.name}}</p>
-        </li>
-      </ul>
-    </div>
-    <div class="main">
-      <ng-switch on="parks.isSelected()">
-       <div ng-switch-when="true">        
-        <h2>{{parks.selected.name}}</h2>
-        <br>
-         {{parks.selected.state}}
-        <br>
-         {{parks.selected.established}}
-        <br>
-         {{parks.selected.headline}}
-        <br>
-         {{parks.selected.bio}}
-        <br>
-         {{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}
-        <br>
-          {{parks.selected.comments[0].comment}}
-        <br>
-        <div class="slideshow">
-        <h2 class="park-name">{{parks.selected.name}}</h2>
-          <img class="bgM" src="{{parks.selected.images[0]}}"}}>
-          <br>
-          <img class="bgM" src="{{parks.selected.images[1]}}"}}>
-          <br>
-          <img class="bgM" src="{{parks.selected.images[2]}}"}}>
-        </div>
-        <div id="map"></div>
-        <div id="instagram-div"></div>
+    <div class="row header">
+      <div class="col-md-12 parkdash-logo">
+        <h1 id="logo">ParkDash<span class="glyphicon glyphicon-leaf glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
+      <div class="dropdown">
+        <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta()">{{park.name}}</li>
+        </ul>
       </div>
-      </ng-switch>
     </div>
+    </div>
+    <ng-switch on="parks.isSelected()">
+    <div ng-switch-when="true">
+    <div class="container-fluid">
+      <div class="row park-main">
+        <div class="park-name col-md-12">
+          <h2>{{parks.selected.name}}</h2>
+        </div>
+      </div>
+      <div class="row park-main">
+        <div class="col-md-4">
+          <div class="park-details">
+            <h1><em>{{parks.selected.headline}}</em></h1>
+            <br>
+            <h5><strong>{{parks.selected.state}}</strong></h3>
+            <h5><strong>Established {{parks.selected.established}}</strong></h5>
+            <p>{{parks.selected.bio}}</p>
+            <h5><strong>Comments <span class="glyphicon glyphicon-comment glyphicon-align-left" aria-hidden="true"></span></strong></h5>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                {{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}
+              </div>
+              <div class="panel-body">
+                <em>"{{parks.selected.comments[0].comment}}"</em>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 park-main">
+          <div class="slideshow">
+            <img class="slide" src="{{parks.selected.images[0]}}"}}>
+            <img class="slide" src="{{parks.selected.images[1]}}"}}>
+            <img class="slide" src="{{parks.selected.images[2]}}"}}>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+      <div id="instagram-div"></div>
+      </div>
+    </div>
+    </ng-switch>
   </div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDabLO9WhXWJ5fRl9LiNFoo4uE5fLQe51I"
     async defer></script>

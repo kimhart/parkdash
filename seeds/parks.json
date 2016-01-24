@@ -1,20 +1,5 @@
 [
   {
-    "name": "Yosemite",
-    "state": "California",
-    "established": 1890,
-    "latitude": 37.8499,
-    "longitude": -119.5677,
-    "headline": "Sheer Cliffs & Vast Valleys",
-    "bio": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.Yosemite is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
-    "images": ["http://www.craigwolf.com/news/uploaded_images/WY5T6500-747443.jpg", "https://9to5mac.files.wordpress.com/2014/08/yosemite-2.jpg", "http://footage.framepool.com/shotimg/qf/662510359-yosemite-falls-bridalveil-falls-yosemite-yosemite-national-park-nature-reserve.jpg"],
-    "comments": [{
-      "first_name": "Kim",
-      "last_name": "H",
-      "comment": "One of my favorite places on earth."
-      }]
-    },
-    {
     "name": "Bryce Canyon",
     "state": "Utah",
     "established": 1928,
@@ -97,6 +82,21 @@
       "first_name": "Kim",
       "last_name": "Hart",
       "comment": "Find the caves, they're amazing!"
+      }]
+    },
+    {
+    "name": "Yosemite",
+    "state": "California",
+    "established": 1890,
+    "latitude": 37.8499,
+    "longitude": -119.5677,
+    "headline": "Sheer Cliffs & Vast Valleys",
+    "bio": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.Yosemite is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+    "images": ["http://www.craigwolf.com/news/uploaded_images/WY5T6500-747443.jpg", "https://9to5mac.files.wordpress.com/2014/08/yosemite-2.jpg", "http://footage.framepool.com/shotimg/qf/662510359-yosemite-falls-bridalveil-falls-yosemite-yosemite-national-park-nature-reserve.jpg"],
+    "comments": [{
+      "first_name": "Kim",
+      "last_name": "H",
+      "comment": "One of my favorite places on earth."
       }]
     }
 ]
