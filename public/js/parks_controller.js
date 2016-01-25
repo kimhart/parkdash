@@ -36,7 +36,7 @@ function ParksController($http) {
   parks.initMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: parks.selected.latitude , lng: parks.selected.longitude},
-    zoom: 7
+    zoom: 8
     });
   };
 

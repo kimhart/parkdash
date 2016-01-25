@@ -19,7 +19,6 @@ html, body {
 }
 
 #instagram-div {
-  width: 78%;
   height: auto;
   margin: 0 auto;
 }
@@ -31,14 +30,17 @@ html, body {
  margin: 0 auto;
 }
 
-
 #map {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 350px;
   display: block;
   border: 1px solid black;
   border-radius: 5px;
-  margin-top: 50px;
+}
+
+.map{
+  text-align: center;
+  margin: 0 auto;
 }
 
 #logo {
@@ -76,7 +78,7 @@ html, body {
   color: white;
   padding: 5px;
   border-radius: 10px;
-  margin-left: 10%;
+  margin: 0 auto;
 }
 
 .overlay {
@@ -127,14 +129,14 @@ html, body {
 }
 
 .panel {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .comment {
-  width: 60%;
-  margin: 0 auto;
+  text-align: left;
   margin-bottom: 15px;
   margin-top: 30px;
 }
@@ -144,10 +146,11 @@ html, body {
   font-size: 60px;
   color: black;
   text-align: center;
+  height: 60px;
 }
 
 .break {
-  height: 90px;
+  height: 170px;
   padding: 10px;
   text-align: center;
 }
@@ -157,8 +160,7 @@ html, body {
   color: white;
   padding: 5px;
   border-radius: 10px;
-  margin-left: 10%;
-  margin-top: 20px;
+  margin: 0 auto;
   text-align: center;
   font-size: 16px;
 }
@@ -197,7 +199,7 @@ h5.comment {
 }
 
 a.forecast-link {
-  font-size: 20px;
+  font-size: 14px;
   color: #c6ff1a;
   margin-bottom: 10px;
 }
