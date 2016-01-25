@@ -1,3 +1,4 @@
+[
 {
     "name": "BRYCE CANYON",
     "state": "Utah",
@@ -14,7 +15,7 @@
       "last_name": "Sherman",
       "comment": "This place is super rad!"
       }]
-    }
+    },
     {
     "name": "DEATH VALLEY",
     "state": "Nevada",
@@ -36,7 +37,7 @@
       "last_name": "H",
       "comment": "Looks like the surface of the moon. Really cool!"
       }]
-    }
+    },
     {
     "name": "JOSHUA TREE",
     "state": "California",
@@ -58,7 +59,7 @@
       "last_name": "Smith",
       "comment": "Easily my favorite place to shroom at."
       }]
-    }
+    },
     {
     "name": "REDWOOD",
     "state": "California",
@@ -75,7 +76,7 @@
       "last_name": "Garner",
       "comment": "I've never felt so small! Driving through the tree was a plus."
       }]
-    }
+    },
     {
     "name": "SEQUOIA AND KINGS CANYON",
     "state": "California",
@@ -92,7 +93,7 @@
       "last_name": "Hart",
       "comment": "Find the caves, they're amazing!"
       }]
-    }
+    },
     {
     "name": "YOSEMITE",
     "state": "California",
@@ -110,3 +111,4 @@
       "comment": "One of my favorite places on earth."
       }]
     }
+  ]

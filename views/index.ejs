@@ -124,7 +124,10 @@
               </div> <!-- weather container -->
             </div> <!-- col-md-2 -->
             <div class="col-md-4">
-              <div id="instagram-div"></div>
+              <div class="insta-container">
+                <div id="instagram-hashtag"></div>
+                <div id="instagram-div"></div>
+              </div>
             </div>
           </div> <!-- row -->
           <div class="row">
@@ -134,7 +137,7 @@
             </div>
             <div class="col-md-6 trail-map">
             <h3 style="font-family: 'Fjalla One', sans-serif">Trail Map &nbsp;&nbsp;<span style="font-size: 16px; color: #879254; font-weight: 300"><em>Click map to zoom &nbsp;</em><span class="glyphicon glyphicon-zoom-in" aria-hidden="true" style="color: #879254"></span></h3>
-              <img id="trail-map-image" src="{{parks.selected.trail_map_url}}">
+              <img data-featherlight="#mylightbox" id="trail-map-image" src="{{parks.selected.trail_map_url}}" href="{{parks.selected.trail_map_url}}">
               </div>
             </div> <!-- col-md-5 -->
           </div> <!--  row -->

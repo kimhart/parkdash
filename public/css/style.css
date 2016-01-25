@@ -17,9 +17,30 @@ html, body {
   display: block;
   background-color: white;
 }
+.insta-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#instagram-hashtag {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
 
 #instagram-div {
+  width: 100%;
+  max-width: 100%;
   height: auto;
+  margin: 0 auto;
+}
+
+
+.instalogo {
+  width: 150px;
+  height: auto; 
   margin: 0 auto;
 }
 
@@ -193,7 +214,7 @@ h5.comment {
 }
 
 .icon {
-  margin-top: 17px;
+  margin-top: 20px;
   width: 60px;
   height: auto;
 }
@@ -210,7 +231,6 @@ a.forecast-link {
   border: 1px solid black;
   cursor: pointer;
 }
-
 
 
 
