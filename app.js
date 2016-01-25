@@ -5,7 +5,7 @@ var MongoClient = require('mongodb').MongoClient;
 var mongoUrl = 'mongodb://localhost:27017/parkdash';
 var ObjectId = require('mongodb').ObjectId;
 var Wunderground = require('wundergroundnode');
-var myKey = 'f7c25337aea3b20c';
+var myKey = process.env.WEATHER_KEY;
 var wunderground = new Wunderground(myKey);
 
 var db;
