@@ -128,11 +128,15 @@
             </div>
           </div> <!-- row -->
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
+              <h3 style="font-family: 'Fjalla One', sans-serif">Location</h3>
               <div id="map"></div>
             </div>
-            <div class="col-md-6">
-            </div> <!-- col-md-6 -->
+            <div class="col-md-6 trail-map">
+            <h3 style="font-family: 'Fjalla One', sans-serif">Trail Map &nbsp;&nbsp;<span style="font-size: 16px; color: #879254; font-weight: 300"><em>Click map to zoom &nbsp;</em><span class="glyphicon glyphicon-zoom-in" aria-hidden="true" style="color: #879254"></span></h3>
+              <img id="trail-map-image" src="{{parks.selected.trail_map_url}}">
+              </div>
+            </div> <!-- col-md-5 -->
           </div> <!--  row -->
         </div>  <!-- container fluid -->
       </div> <!-- div ng-switch -->
