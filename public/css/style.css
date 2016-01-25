@@ -199,7 +199,7 @@ h5.comment {
 }
 
 a.forecast-link {
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   margin-bottom: 10px;
 }
@@ -208,6 +208,7 @@ a.forecast-link {
   width: 100%;
   border-radius: 5px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 
