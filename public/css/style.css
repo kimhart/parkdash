@@ -12,7 +12,7 @@ html, body {
 }
 
 .grid {
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
   display: block;
   background-color: white;
@@ -232,8 +232,21 @@ a.forecast-link {
   cursor: pointer;
 }
 
+#trails-modal {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 
+#trails-modal-img {
+  width: 100%;
+  height: auto;
+}
 
-
+.trails-modal-size {
+  background-color: white;
+  border-radius: 10px;
+  width: 700px;
+}
 
 

@@ -15,8 +15,11 @@ $(document).ready(function(){
     $('#hello-modal').modal('show');
   };
   showModal();
-  
 
 
+  $("#trail-map-image").on("click", function() {
+    $('#trails-modal-img').attr('src', $('#trail-map-image').attr('src'));
+    $('#trails-modal').modal('show');
+  });
 
 });

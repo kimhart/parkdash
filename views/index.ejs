@@ -132,12 +132,21 @@
           </div> <!-- row -->
           <div class="row">
             <div class="col-md-6">
-              <h3 style="font-family: 'Fjalla One', sans-serif">Location</h3>
+              <h3 style="font-family: 'Fjalla One', sans-serif">Google Map</h3>
               <div id="map"></div>
             </div>
             <div class="col-md-6 trail-map">
-            <h3 style="font-family: 'Fjalla One', sans-serif">Trail Map &nbsp;&nbsp;<span style="font-size: 16px; color: #879254; font-weight: 300"><em>Click map to zoom &nbsp;</em><span class="glyphicon glyphicon-zoom-in" aria-hidden="true" style="color: #879254"></span></h3>
-              <img data-featherlight="#mylightbox" id="trail-map-image" src="{{parks.selected.trail_map_url}}" href="{{parks.selected.trail_map_url}}">
+              <div class="modal fade" id="trails-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog trails-modal-size">
+                  <div class="modal-content trails-modal-size">
+                    <div class="modal-body trails-modal-size">
+                      <img id="trails-modal-img" data-dismiss="modal" src="{{parks.selected.trail_map_url}}">
+                    </div> <!-- modal body -->
+                  </div> <!-- modal content -->
+                </div> <!-- modal dialogue -->
+              </div> <!--  modal fade -->
+            <h3 style="font-family: 'Fjalla One', sans-serif">Trails &nbsp;&nbsp;<span style="font-size: 16px; color: #879254; font-weight: 300"><em>Click map to zoom &nbsp;</em><span class="glyphicon glyphicon-zoom-in" aria-hidden="true" style="color: #879254"></span></h3>
+              <img id="trail-map-image" src="{{parks.selected.trail_map_url}}">
               </div>
             </div> <!-- col-md-5 -->
           </div> <!--  row -->
