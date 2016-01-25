@@ -4,8 +4,8 @@
   "description": "### Description",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,16 +21,12 @@
   "dependencies": {
     "angular-google-maps": "^2.3.0",
     "body-parser": "^1.14.2",
-    "cheerio": "^0.19.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
-    "fs": "0.0.2",
     "handlebars": "^4.0.5",
     "instagram-node": "^0.5.8",
     "mongo": "^0.1.0",
     "seeds": "^2.0.6",
     "wundergroundnode": "^0.9.0"
-  },
-  "devDependencies": {}
   }
 }
