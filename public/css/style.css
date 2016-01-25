@@ -19,7 +19,7 @@ html, body {
 }
 
 #instagram-div {
-  width: 80%;
+  width: 78%;
   height: auto;
   margin: 0 auto;
 }
@@ -76,7 +76,7 @@ html, body {
   color: white;
   padding: 5px;
   border-radius: 10px;
-  margin-left: 25px;
+  margin-left: 10%;
 }
 
 .overlay {
@@ -153,33 +153,58 @@ html, body {
 }
 
 .weather-container{
-  text-align: center;
-  border: 1px solid black;
+  background-color: #0099cc;;
+  color: white;
+  padding: 5px;
   border-radius: 10px;
-  width: 200px;
-  height: auto;
+  margin-left: 10%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
 }
 
 h3.current {
   font-size: 16px;
 }
 
-p.actual-temp, p.feels-like, p#weather-condition {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-
 h5.comment {
   text-align: center;
 }
 
 #switch-to-f, #switch-to-c {
-  background-color: black;
+  background-color: #ccf2ff;
+  border: none;
+  box-shadow: 1px 1px 1px black;
   border-radius: 5px;
-  color: white;
+  color: black;
   margin-top: 10px;
+  width: 40px;
+  height: 30px;
 }
+
+#icon-background {
+  margin: 0 auto;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icon {
+  margin-top: 17px;
+  width: 60px;
+  height: auto;
+}
+
+a.forecast-link {
+  font-size: 20px;
+  color: #c6ff1a;
+  margin-bottom: 10px;
+}
+
+
+
+
 
 
 

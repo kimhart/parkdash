@@ -23,7 +23,7 @@
     <div class="modal fade" id="hello-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog">
         <div class="modal-content">
-          <h1 id="logo">ParkDash <span class="glyphicon glyphicon-leaf glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
+          <h1 id="logo">ParkDash<span class="glyphicon glyphicon-tree-conifer glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
           <div class="modal-header">
             <h4 class="modal-title"><strong>Explore:</strong></h4>
           </div> <!-- modal header -->
@@ -35,7 +35,7 @@
     </div> <!--  modal fade -->
     <div class="row header">
       <div class="col-md-12 parkdash-logo">
-        <h1 id="logo">ParkDash <span class="glyphicon glyphicon-leaf glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
+        <h1 id="logo">ParkDash<span class="glyphicon glyphicon-tree-conifer glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
         <p class="tagline"><em>A snapshot of US National Parks</em></p>
         <div class="dropdown">
           <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
@@ -94,21 +94,22 @@
                 </div>
               </div> <!-- park-details -->
               <div class="weather-container">
-                <div id="current-temp-div">
-                  <button id= "switch-to-f" ng-click="parks.switchToF(); parks.switchToF2()">F</button>
-                  <button id="switch-to-c" ng-click="parks.switchToC(); parks.switchToC2()">C</button>
+                <div class="overlay">
+                  <button id= "switch-to-f" ng-click="parks.switchToF(); parks.switchToF2()">&#176 F</button>
+                  <button id="switch-to-c" ng-click="parks.switchToC(); parks.switchToC2()">&#176 C</button>
                   <div id="date"></div>
                   <div id="weather-condition"></div>
-                  <div id="weather-icon"></div>
-                  <div>
-                    <p class="actual-temp"></p>
-                    <p class="feels-like"></p>
+                  <div id="icon-background">
+                    <div id="weather-icon"></div>
                   </div>
-                  <div class="wind"></div>
-                  <div id="high"></div>
-                  <div id="low"></div>
-                  <div id="10forecast"></div>
-                </div> <!-- current temp div -->
+                  <div>
+                    <p style="font-size: 45px" class="actual-temp"></p>
+                    <p style="font-size: 20px" class="feels-like"></p>
+                    <p style="font-size: 20px" id="high"></p>
+                    <p style="font-size: 20px" class="wind"></p>
+                    <p id="10forecast"></p>
+                  </div>
+                </div> <!--  overlay -->
               </div> <!-- weather container -->
             </div> <!-- col-md-6 -->
             <div class="col-md-6">

@@ -53,12 +53,12 @@ function ParksController($http) {
       var feelsLikeTempF = parsed_json['current_observation']['feelslike_f'];
       var forecastLink = parsed_json['current_observation']['forecast_url'];
 
-      var $currentTempDiv = $('.actual-temp').html('Actual: ' + temp_f + '&#176 F');
+      var $currentTempDiv = $('.actual-temp').html(temp_f + '&#176 F');
       var $feelsLikeDiv = $('.feels-like').html('Feels like: ' + feelsLikeTempF + '&#176 F');
-      var $iconDiv = $('#weather-icon').html("<img src='" + iconUrl + "' alt='" + icon + "'>");
+      var $iconDiv = $('#weather-icon').html("<img class='icon' src='" + iconUrl + "' alt='" + icon + "'>");
       var $conditionDiv = $('#weather-condition').html("<p>" + weather + "</p>");
       var $windDiv = $('.wind').html('<p> Wind: ' + wind + ' mph </p>');
-      var $forecastDiv = $('#10forecast').html('<a href="' + forecastLink + '" target="_blank">View 10-Day Forecast</a>')
+      var $forecastDiv = $('#10forecast').html('<a href="' + forecastLink + '" target="_blank" class="forecast-link">View 10-Day Forecast</a>')
       }
     });
   }
@@ -70,7 +70,7 @@ function ParksController($http) {
     success : function(parsed_json) {
       var temp_c = parsed_json['current_observation']['temp_c'];
       var feelsLikeTempC = parsed_json['current_observation']['feelslike_c'];
-      var $currentTempDiv = $('.actual-temp').html('Actual: ' + temp_c + '&#176 C');
+      var $currentTempDiv = $('.actual-temp').html(temp_c + '&#176 C');
       var $feelsLikeDiv = $('.feels-like').html('Feels like: ' + feelsLikeTempC + '&#176 C');
       }
     });
@@ -84,8 +84,7 @@ function ParksController($http) {
       var today = parsed_json.forecast.simpleforecast.forecastday[0];
       var high_c = today.high.celsius;
       var low_c = today.low.celsius;
-      var $highDiv = $('#high').html('High: ' + high_c + '&#176 C');
-      var $lowDiv = $('#low').html('Low: ' + low_c + '&#176 C')
+      var $highLowDiv = $('#high').html('H: ' + high_c + '&#176 C / L: ' + low_c + '&#176 C');
       }
     });
   };
@@ -97,7 +96,7 @@ function ParksController($http) {
     success : function(parsed_json) {
       var temp_f = parsed_json['current_observation']['temp_f'];
       var feelsLikeTempF = parsed_json['current_observation']['feelslike_f'];
-      var $currentTempDiv = $('.actual-temp').html('Actual: ' + temp_f + '&#176 F');
+      var $currentTempDiv = $('.actual-temp').html(temp_f + '&#176 F');
       var $feelsLikeDiv = $('.feels-like').html('Feels like: ' + feelsLikeTempF + '&#176 F');
       }
     });
@@ -111,8 +110,7 @@ function ParksController($http) {
       var today = parsed_json.forecast.simpleforecast.forecastday[0];
       var high_f = today.high.fahrenheit;
       var low_f = today.low.fahrenheit;
-      var $highDiv = $('#high').html('High: ' + high_f + '&#176 F');
-      var $lowDiv = $('#low').html('Low: ' + low_f + '&#176 F')
+      var $highLowDiv = $('#high').html('H: ' + high_f + '&#176 C / L: ' + low_f + '&#176 C');
       }
     });
   };
@@ -132,9 +130,8 @@ function ParksController($http) {
       var high_c = today.high.celsius;
       var low_c = today.low.celsius;
 
-      var $dateDiv = $('#date').html('<h3>' + weekday + ', ' + monthShort + date + '</h3>')
-      var $highDiv = $('#high').html('<p>High: ' + high_f + '&#176 F</p>');
-      var $lowDiv = $('#low').html('<p>Low: ' + low_f + '&#176 F</p>');
+      var $dateDiv = $('#date').html('<h3>' + weekday + ', ' + monthShort + ' ' + date + '</h3>')
+      var $highLowDiv = $('#high').html('H: ' + high_f + '&#176 F / L: ' + low_f + '&#176 F');
       }
     });
   }
