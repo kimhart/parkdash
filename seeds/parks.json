@@ -2,6 +2,7 @@
   {
     "name": "BRYCE CANYON",
     "state": "Utah",
+    "zip": 84764,
     "established": 1928,
     "latitude": 37.6283,
     "longitude": -112.1677,
@@ -17,6 +18,7 @@
     {
     "name": "DEATH VALLEY",
     "state": "Nevada",
+    "zip": 92328,
     "established": 1933,
     "latitude": 36.2469,
     "longitude": -116.8169,
@@ -37,6 +39,7 @@
     {
     "name": "JOSHUA TREE",
     "state": "California",
+    "zip": 92252,
     "established": 1994,
     "latitude": 33.7884,
     "longitude": -115.8982,
@@ -57,6 +60,7 @@
     {
     "name": "REDWOOD",
     "state": "California",
+    "zip": 95531,
     "established": 1968,
     "latitude": 41.3000,
     "longitude": -124.0000,
@@ -72,6 +76,7 @@
     {
     "name": "SEQUOIA & KINGS CANYON",
     "state": "California",
+    "zip": 93271,
     "established": 1940,
     "latitude": 36.6340,
     "longitude": -118.4910,
@@ -87,6 +92,7 @@
     {
     "name": "YOSEMITE",
     "state": "California",
+    "zip": 95389,
     "established": 1890,
     "latitude": 37.8499,
     "longitude": -119.5677,

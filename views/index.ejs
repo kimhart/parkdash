@@ -20,104 +20,119 @@
 </head>
 <body>
   <div class="grid" ng-controller="ParksController as parks">
-   <div class="modal fade" id="hello-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      <h1 id="logo">ParkDash <span class="glyphicon glyphicon-leaf glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
-        <div class="modal-header">
-          <h4 class="modal-title"><strong>Explore:</strong></h4>
-        </div>
-      <div class="modal-body">
-        <li class="parks-in-modal" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather()" data-dismiss="modal">{{park.name}}</li>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="modal fade" id="hello-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h1 id="logo">ParkDash <span class="glyphicon glyphicon-leaf glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
+          <div class="modal-header">
+            <h4 class="modal-title"><strong>Explore:</strong></h4>
+          </div> <!-- modal header -->
+          <div class="modal-body">
+            <li class="parks-in-modal" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather(); parks.getForecast()" data-dismiss="modal">{{park.name}}</li>
+          </div> <!-- modal body -->
+        </div> <!-- modal content -->
+      </div> <!-- modal dialogue -->
+    </div> <!--  modal fade -->
     <div class="row header">
       <div class="col-md-12 parkdash-logo">
         <h1 id="logo">ParkDash <span class="glyphicon glyphicon-leaf glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
         <p class="tagline"><em>A snapshot of US National Parks</em></p>
-      <div class="dropdown">
-        <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather()">{{park.name}}</li>
-        </ul>
-      </div>
-    </div>
-    </div>
+        <div class="dropdown">
+          <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather(); parks.getForecast()">{{park.name}}</li>
+          </ul>
+        </div> <!-- dropdown -->
+      </div> <!-- col-md-12 parkdash-logo -->
+    </div> <!-- row header -->
     <ng-switch on="parks.isSelected()">
-    <div ng-switch-when="true">
-    <div class="container-fluid">
-      <div class="row park-main">
-      <div class="col-md-12">
-        <div class="title"><h1>{{parks.selected.name}}</h1></div>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img class="slide" src="{{parks.selected.images[0]}}"}}>
-            </div>
-            <div class="item">
-              <img class="slide" src="{{parks.selected.images[1]}}"}}>
-            </div>
-            <div class="item">
-              <img class="slide" src="{{parks.selected.images[2]}}"}}>
-            </div>
-          </div>
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="break col-md-12">
-         <h3 style="font-family: 'Fjalla One', sans-serif;"><span style="color: #879254">State:</span> {{parks.selected.state}} &nbsp;&nbsp;&nbsp; <span style="color: #879254">Established:</span> {{parks.selected.established}}</h3>
-      </div>
-      <div class="row park-main">
-        <div class="col-md-6">
-          <div class="park-details">
-            <div class="overlay">
-              <h3 style="font-family: 'Fjalla One', sans-serif;">{{parks.selected.headline}}</h3>
-              <p>{{parks.selected.bio}}</p>
+      <div ng-switch-when="true">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title"><h1>{{parks.selected.name}}</h1></div>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="slide" src="{{parks.selected.images[0]}}"}}>
+                    </div>
+                    <div class="item">
+                      <img class="slide" src="{{parks.selected.images[1]}}"}}>
+                    </div>
+                    <div class="item">
+                      <img class="slide" src="{{parks.selected.images[2]}}"}}>
+                    </div>
+                  </div> <!-- carousel inner -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div> <!--  carousel-example-generic -->
+              </div> <!-- col-md-12 -->
+            </div> <!-- row -->
+          <div class="row">
+            <div class="break col-md-12">
+              <h3 style="font-family: 'Fjalla One', sans-serif;"><span style="color: #879254">State:</span> {{parks.selected.state}} &nbsp;&nbsp;&nbsp; <span style="color: #879254">Established:</span> {{parks.selected.established}}</h3>
             </div>
           </div>
-          <div class="weather-container">
-            <div id="current-temp-div">
-              <h3 class="current">CURRENTLY</h3>
-              <div id="weather-condition"></div>
-              <div id="weather-icon"></div>
-              <p class="actual-temp"></p>
-              <h3 class="current">Feels like:</h3>
-              <p class="feels-like"></p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="park-details">
+                <div class="overlay">
+                  <h3 style="font-family: 'Fjalla One', sans-serif;">{{parks.selected.headline}}</h3>
+                  <p>{{parks.selected.bio}}</p>
+                </div>
+              </div> <!-- park-details -->
+              <div class="weather-container">
+                <div id="current-temp-div">
+                    <button id="switch-to-F" ng-click="parks.switchToCelsius(); parks.switchToCelsius2">C</button>
+                    <button id= "switch-to-C" ng-click="parks.switchToFarenheit(); parks.switchToFarenheit2">F</button>
+                  <div id="date"></div>
+                  <div id="weather-condition"></div>
+                  <div id="weather-icon"></div>
+                  <div>
+                    <p class="actual-temp"></p>
+                    <p class="feels-like"></p>
+                  </div>
+                  <div class="wind"></div>
+                  <div id="high"></div>
+                  <div id="low"></div>
+                  <div id="10forecast"></div>
+                </div> <!-- current temp div -->
+              </div> <!-- weather container -->
+            </div> <!-- col-md-6 -->
+            <div class="col-md-6 park-main">
+              <div id="instagram-div"></div>
             </div>
-          </div>
-          <div id="map"></div>
-        </div>
-        <div class="col-md-6 park-main">
-          <div id="instagram-div"></div>
-        </div>
-      </div>
-      <h5 class="comment"><strong>Comments <span class="glyphicon glyphicon-comment glyphicon-align-left" aria-hidden="true"></span></strong></h5>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="panel-title">{{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}</div>
+          </div> <!-- row park-main -->
+          <div class="row">
+            <div class="col-md-6">
+              <div id="map"></div>
             </div>
-          <div class="panel-body">
-            <em>"{{parks.selected.comments[0].comment}}"</em>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-md-6">
+              <h5 class="comment"><strong>Comments <span class="glyphicon glyphicon-comment glyphicon-align-left" aria-hidden="true"></span></strong></h5>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="panel-title">{{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}</div>
+                </div>
+                <div class="panel-body">
+                  <em>"{{parks.selected.comments[0].comment}}"</em>
+                </div>
+              </div>
+            </div> <!-- col-md-6 -->
+          </div> <!--  row -->
+        </div>  <!-- container fluid -->
+      </div> <!-- div ng-switch -->
     </ng-switch>
   </div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDabLO9WhXWJ5fRl9LiNFoo4uE5fLQe51I"

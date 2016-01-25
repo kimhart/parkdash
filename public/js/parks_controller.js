@@ -42,26 +42,104 @@ function ParksController($http) {
 
   parks.getWeather = function(){
     $.ajax({
-    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.state+"/"+parks.selected.name+".json",
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.zip+".json",
     dataType : "jsonp",
     success : function(parsed_json) {
-      console.log(parsed_json)
-
       var temp_f = parsed_json['current_observation']['temp_f'];
-      var temp_c = parsed_json['current_observation']['temp_c'];
       var weather = parsed_json['current_observation']['weather'];
       var wind = parsed_json['current_observation']['wind_mph'];
-      var icon = parsed_json['current_observation']['icon_url'];
+      var iconUrl = parsed_json['current_observation']['icon_url'];
+      var icon = parsed_json['current_observation']['icon'];
       var feelsLikeTempF = parsed_json['current_observation']['feelslike_f'];
-      var feelsLikeTempC = parsed_json['current_observation']['feelslike_c'];
+      var forecastLink = parsed_json['current_observation']['forecast_url'];
 
-      var $currentTempDiv = $('.actual-temp').html(temp_f + '&#176 F / ' + temp_c + ' &#176 C');
-      var $feelsLikeDiv = $('.feels-like').html(feelsLikeTempF + '&#176 F / ' + feelsLikeTempC + ' &#176 C');
-      var $iconDiv = $('#weather-icon').html("<img src='" + icon + "'>");
-      var $condition = $('#weather-condition').html("<p>" + weather + "</p>");
+      var $currentTempDiv = $('.actual-temp').html('Actual: ' + temp_f + '&#176 F');
+      var $feelsLikeDiv = $('.feels-like').html('Feels like: ' + feelsLikeTempF + '&#176 F');
+      var $iconDiv = $('#weather-icon').html("<img src='" + iconUrl + "' alt='" + icon + "'>");
+      var $conditionDiv = $('#weather-condition').html("<p>" + weather + "</p>");
+      var $windDiv = $('.wind').html('<p> Wind: ' + wind + ' mph </p>');
+      var $forecastDiv = $('#10forecast').html('<a href="' + forecastLink + '" target="_blank">View 10-Day Forecast</a>')
       }
     });
   }
+
+  parks.switchToCelsius = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.zip+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var temp_c = parsed_json['current_observation']['temp_c'];
+      var feelsLikeTempC = parsed_json['current_observation']['feelslike_c'];
+      var $currentTempDiv = $('.actual-temp').html('Actual: ' + temp_c + '&#176 C');
+      var $feelsLikeDiv = $('.feels-like').html('Feels like: ' + feelsLikeTempC + '&#176 C');
+      }
+    });
+  };
+    
+    parks.switchToCelsius2 = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var today = parsed_json.forecast.simpleforecast.forecastday[0];
+      var high_c = today.high.celsius;
+      var low_c = today.low.celsius;
+      var $highDiv = $('#high').html('<p>High: ' + high_c + '&#176 C</p>');
+      var $lowDiv = $('#low').html('<p>Low: ' + low_c + '&#176 C</p>')
+      }
+    });
+  };
+
+   parks.switchToFarenheit = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.zip+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var temp_f = parsed_json['current_observation']['temp_f'];
+      var feelsLikeTempF = parsed_json['current_observation']['feelslike_f'];
+      var $currentTempDiv = $('.actual-temp').html('Actual: ' + temp_f + '&#176 F');
+      var $feelsLikeDiv = $('.feels-like').html('Feels like: ' + feelsLikeTempF + '&#176 F');
+      }
+    });
+  };
+    
+  parks.switchToFarenheit2 = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var today = parsed_json.forecast.simpleforecast.forecastday[0];
+      var high_f = today.high.fahrenheit;
+      var low_f = today.low.fahrenheit;
+      var $highDiv = $('#high').html('<p>High: ' + high_f + '&#176 F</p>');
+      var $lowDiv = $('#low').html('<p>Low: ' + low_f + '&#176 F</p>')
+      }
+    });
+  };
+
+
+  parks.getForecast = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var today = parsed_json.forecast.simpleforecast.forecastday[0];
+      var weekday = today.date.weekday;
+      var monthShort = today.date.monthname_short + ".";
+      var date = today.date.day;
+      var high_f = today.high.fahrenheit;
+      var low_f = today.low.fahrenheit;
+      var high_c = today.high.celsius;
+      var low_c = today.low.celsius;
+
+      var $dateDiv = $('#date').html('<h3>' + weekday + ', ' + monthShort + date + '</h3>')
+      var $highDiv = $('#high').html('<p>High: ' + high_f + '&#176 F</p>');
+      var $lowDiv = $('#low').html('<p>Low: ' + low_f + '&#176 F</p>');
+      }
+    });
+  }
+
+
 
   parks.showInsta = function(event){
     if(parks.selected.name === 'YOSEMITE'){
