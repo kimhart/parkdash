@@ -127,7 +127,7 @@ html, body {
 }
 
 .panel {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -170,9 +170,16 @@ p.actual-temp, p.feels-like, p#weather-condition {
 }
 
 
+h5.comment {
+  text-align: center;
+}
 
-
-
+#switch-to-f, #switch-to-c {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+}
 
 
 

@@ -63,7 +63,7 @@ function ParksController($http) {
     });
   }
 
-  parks.switchToCelsius = function(){
+  parks.switchToC = function(){
     $.ajax({
     url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.zip+".json",
     dataType : "jsonp",
@@ -76,7 +76,7 @@ function ParksController($http) {
     });
   };
     
-    parks.switchToCelsius2 = function(){
+  parks.switchToC2 = function(){
     $.ajax({
     url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
     dataType : "jsonp",
@@ -84,13 +84,13 @@ function ParksController($http) {
       var today = parsed_json.forecast.simpleforecast.forecastday[0];
       var high_c = today.high.celsius;
       var low_c = today.low.celsius;
-      var $highDiv = $('#high').html('<p>High: ' + high_c + '&#176 C</p>');
-      var $lowDiv = $('#low').html('<p>Low: ' + low_c + '&#176 C</p>')
+      var $highDiv = $('#high').html('High: ' + high_c + '&#176 C');
+      var $lowDiv = $('#low').html('Low: ' + low_c + '&#176 C')
       }
     });
   };
 
-   parks.switchToFarenheit = function(){
+   parks.switchToF = function(){
     $.ajax({
     url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/conditions/q/"+parks.selected.zip+".json",
     dataType : "jsonp",
@@ -103,7 +103,7 @@ function ParksController($http) {
     });
   };
     
-  parks.switchToFarenheit2 = function(){
+  parks.switchToF2 = function(){
     $.ajax({
     url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
     dataType : "jsonp",
@@ -111,8 +111,8 @@ function ParksController($http) {
       var today = parsed_json.forecast.simpleforecast.forecastday[0];
       var high_f = today.high.fahrenheit;
       var low_f = today.low.fahrenheit;
-      var $highDiv = $('#high').html('<p>High: ' + high_f + '&#176 F</p>');
-      var $lowDiv = $('#low').html('<p>Low: ' + low_f + '&#176 F</p>')
+      var $highDiv = $('#high').html('High: ' + high_f + '&#176 F');
+      var $lowDiv = $('#low').html('Low: ' + low_f + '&#176 F')
       }
     });
   };
@@ -157,7 +157,7 @@ function ParksController($http) {
     } else if(parks.selected.name === 'REDWOOD'){
       var instaDiv = document.getElementById('instagram-div');
       instaDiv.innerHTML = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width: 350px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/-c0SpBA8KI/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Watch your step!  Banana slugs are key decomposers within the redwood forest. They become especially active during rainy weather and often go unseen due to their ability to blend in with leaf cover.  #redwoodnps #findyourpark #npwest #bananaslug</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Redwood N&amp;S Parks (@redwoodnps) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-11-24T02:09:07+00:00">Nov 23, 2015 at 6:09pm PST</time></p></div></blockquote>'
-    } else if (parks.selected.name === 'SEQUOIA & KINGS'){
+    } else if (parks.selected.name === 'SEQUOIA AND KINGS CANYON'){
       var instaDiv = document.getElementById('instagram-div');
       instaDiv.innerHTML = '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width: 350px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:33.1834532374% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BAbQpX5tHbV/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">As feet of snow accumulates, visitors that come to Grant Grove and Giant Forest may wonder, &#39;Where have all the Black Bears gone? They must be hibernating!&#39; True or False - Black Bears are true hibernators? Post your answer and keep in mind it might not be exactly what you would think. We&#39;ll get back to you with the response of one of our Bear Technicians and Biologist</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Sequoia &amp; Kings Canyon NP (@sequoia_kingscanyon_np) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-12T04:41:12+00:00">Jan 11, 2016 at 8:41pm PST</time></p></div></blockquote>'
     } else {
