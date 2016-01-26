@@ -10,10 +10,20 @@
     "headline": "A Red Rock Wonderland",
     "bio": "Visit Arches and discover a landscape of contrasting colors, landforms and textures unlike any other in the world. The park has over 2,000 natural stone arches, in addition to hundreds of soaring pinnacles, massive fins and giant balanced rocks. This red rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
     "images": ["http://cdn.aarp.net/content/dam/travel/destination-images/arches-national-park/2014-01/1400-arches-national-park-sunrise.imgcache.rev1390493613036.web.1400.720.jpg", "http://cdn.bigbangfish.com/555/Arches-National-Park-wallpapers/Arches-National-Park-wallpapers-1.jpg", "http://www.nps.gov/common/uploads/photogallery/20140210/park/arch/20B32857-155D-451F-679A44791A20187B/20B32857-155D-451F-679A44791A20187B.jpg"],
-    "comments": [{
-      "first_name": "Joe",
-      "last_name": "Shmoe",
-      "comment": "Love this place!"
+    "hikes": [{
+      "name": "Windows",
+      "distance": "1 mile",
+      "min": "20 min"
+      },
+      {
+      "name": "Park Avenue",
+      "distance": "2 miles",
+      "min": "1.5 hours"
+      },
+      {
+      "name": "Devils Garden ",
+      "distance": "7.2 miles",
+      "min": "4 hours"
       }]
     },
   {
@@ -27,10 +37,20 @@
     "headline": "Hoodoos & Forest",
     "bio": "Hoodoos (odd-shaped pillars of rock left standing from the forces of erosion) can be found on every continent, but here is the largest collection of hoodoos in the world! Descriptions fail. Cave without a roof? Forest of stone? Photographs do not do it justice.",
     "images": ["http://www.sandhollowresorts.com/wp-content/uploads/2015/01/Bryce-Canyon-11.jpg", "https://upload.wikimedia.org/wikipedia/commons/0/0f/Natural_bridge_in_Bryce_Canyon.jpg", "http://brycezioninn.com/wp-content/uploads/2014/06/pines-of-bryce-canyon-national-Park.jpg"],
-    "comments": [{
-      "first_name": "P.",
-      "last_name": "Sherman",
-      "comment": "This place is super rad!"
+    "hikes": [{
+      "name": "Mossy Cave",
+      "distance": "0.8 miles",
+      "min": "20 min"
+      },
+      {
+      "name": "Navajo Trail",
+      "distance": "1.3 miles",
+      "min": "40 min"
+      },
+      {
+      "name": "Fairyland Loop",
+      "distance": "8 miles",
+      "min": "5 hours"
       }]
     },
     {
@@ -44,10 +64,20 @@
     "headline": "A Land Divided by Rivers",
     "bio": "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: the Island in the Sky, the Needles, the Maze, and the rivers themselves. These areas share a primitive desert atmosphere, but each offers different opportunities for sightseeing and adventure.",
     "images": ["https://media.deseretdigital.com/file/d73a7e3645?crop=top:0%7Cleft:0%7Cwidth:1260%7Cheight:670%7Cgravity:Center&resize=width:1260&order=resize,crop&c=14&a=c856f78c", "http://www.adventurewomen.com/wp-content/uploads/2014/09/WP-Colorado-R-at-Dead-Horse-Pt-State-Pk-iStock_000009272857_Medium.jpg", "http://images.boomsbeat.com/data/images/full/73698/g2-jpg.jpg"],
-    "comments": [{
-      "first_name": "Linda",
-      "last_name": "S.",
-      "comment": "Like walking straight into an old western movie."
+    "hikes": [{
+      "name": "Mesa Arch",
+      "distance": "0.5 miles",
+      "min": "30 min"
+      },
+      {
+      "name": "Whale Rock",
+      "distance": "1 mile",
+      "min": "1 hour"
+      },
+      {
+      "name": "Gooseberry Canyon",
+      "distance": "5.4 miles",
+      "min": "5 hours"
       }]
     },
     {
@@ -61,11 +91,22 @@
     "headline": "Keep Crater Blue",
     "bio": "Crater Lake has inspired people for thousands of years. No place else on earth combines a deep, pure lake, so blue in color; sheer surrounding cliffs, almost two thousand feet high; two picturesque islands; and a violent volcanic past. It is a place of immeasurable beauty, and an outstanding outdoor laboratory and classroom.",
     "images": ["https://voyagenation.com/voyages/C/Crater-Lake-Fort-Klamath-Oregon.jpg", "https://cdn.photographylife.com/wp-content/uploads/2015/08/Crater-lake-dawn1.jpg", "http://book.amtrakvacations.com/images/Crater%20Lake%20_%20Lake.jpg"],
-    "comments": [{
-      "first_name": "Eric",
-      "last_name": "Smith",
-      "comment": "Picture perfect."
+    "hikes": [{
+      "name": "Sun Notch Viewpoint",
+      "distance": "0.25 miles",
+      "min": "20 min"
+      },
+      {
+      "name": "Annie Creek Canyon",
+      "distance": "1.7 miles",
+      "min": "1.5 hours"
+      },
+      {
+      "name": "Garfield Peak",
+      "distance": "4 miles",
+      "min": "6 hours"
       }]
+
     },
     {
     "name": "DEATH VALLEY",
@@ -78,15 +119,20 @@
     "headline": "Hottest, Driest, Lowest",
     "bio": "In this below-sea-level basin, steady drought and record summer heat make Death Valley a land of extremes. Towering peaks are frosted with winter snow. Rare rainstorms bring vast fields of wildflowers. Lush oases harbor tiny fish and refuge for wildlife and humans. Despite its morbid name, a great diversity of life survives in Death Valley.",
     "images": ["http://www.sbcc.edu/earthscience/images/Death-Valley-Sunset-prints.jpg", "http://edu-geography.com/data_images/countries/death-valley/death-valley-05.jpg", "https://robertfinkelstein.files.wordpress.com/2009/06/death-valley-national-park-california.jpg"],
-    "comments": [{
-      "first_name": "Greg",
-      "last_name": "Hart",
-      "comment": "It was 125 degrees and our car almost overheated and broke down... so scary but cool place."
-      }, 
+    "hikes": [{
+      "name": "Golden Canyon, Gower Gulch, & Badlands",
+      "distance": "1 mile",
+      "min": "30 min"
+      },
       {
-      "first_name": "Claire",
-      "last_name": "H",
-      "comment": "Looks like the surface of the moon. Really cool!"
+      "name": "Mosaic Canyon",
+      "distance": "4 miles",
+      "min": "4 hours"
+      },
+      {
+      "name": "Death Valley Buttes",
+      "distance": "1.2 miles",
+      "min": "5 hours"
       }]
     },
     {
@@ -100,10 +146,20 @@
     "headline": "Largest Subtropical Wilderness in the US",
     "bio": "Everglades National Park protects an unparalleled landscape that provides important habitat for numerous rare and endangered species like the manatee,  American crocodile, and the elusive Florida panther.",
     "images": ["http://images6.alphacoders.com/368/368375.jpg", "http://cdn.aarp.net/content/dam/travel/destination-images/florida/everglades-national-park/1400-everglades-national-park-tree.imgcache.rev1409336294425.web.1400.720.jpg", "http://40.media.tumblr.com/67e4dc6d27897a9696a0c64def49f3d7/tumblr_nkgnrglZLM1tw9wqro1_1280.jpg", "http://cdn2.hubspot.net/hubfs/156834/everglades_national_park_florida-wallpaper.jpg"],
-    "comments": [{
-      "first_name": "Kim",
-      "last_name": "Hart",
-      "comment": "Swam here with the manatees — terrifying but awesome."
+    "hikes": [{
+      "name": "West Lake Trail",
+      "distance": "0.5 miles",
+      "min": "20 min"
+      },
+      {
+      "name": "Bayshore Loop Trail",
+      "distance": "2 miles",
+      "min": "40 min"
+      },
+      {
+      "name": "None",
+      "distance": "",
+      "min": ""
       }]
     },
     {
@@ -117,10 +173,20 @@
     "headline": "Crown of the Continent",
     "bio": "Come and experience Glacier's pristine forests, alpine meadows, rugged mountains, and spectacular lakes. With over 700 miles of trails, Glacier is a hiker's paradise for adventurous visitors seeking wilderness and solitude. Relive the days of old through historic chalets, lodges, transportation, and stories of Native Americans.",
     "images": ["http://visitglacierpark.com/wp-content/uploads/2014/12/188.jpg", "http://static.thousandwonders.net/Glacier.National.Park.original.494.jpg", "http://images.huffingtonpost.com/2014-04-16-891A0170.jpg"],
-    "comments": [{
-      "first_name": "Steve",
-      "last_name": "P.",
-      "comment": "So many mountain goats!"
+    "hikes": [{
+      "name": "Running Eagle Falls",
+      "distance": "0.6 miles",
+      "min": "20 min"
+      },
+      {
+      "name": "No Name Lake",
+      "distance": "5.4 miles",
+      "min": "2 hours"
+      },
+      {
+      "name": "Highline Loop",
+      "distance": "11.8",
+      "min": "7 hours"
       }]
     },
     {
@@ -134,10 +200,20 @@
     "headline": "The Beast",
     "bio": "Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.",
     "images": ["http://travel.aarp.org/content/dam/travel/destination-images/grand-canyon-national-park/2014-01/1400-grand-canyon-national-park-hiker.jpg", "http://i1.tietuku.com/a06b4d77bef17026.jpg", "http://mediad.publicbroadcasting.net/p/knau/files/201111/3226319-477493584.JPG"],
-    "comments": [{
-      "first_name": "Claire",
-      "last_name": "Hart",
-      "comment": "Go rafting through the Colorado River at the bottom, it's unreal."
+    "hikes": [{
+      "name": "Bright Angel Point Trail",
+      "distance": "0.5 miles",
+      "min": "30 min"
+      },
+      {
+      "name": "Uncle Jim Trail",
+      "distance": "5 miles",
+      "min": "3 hours"
+      },
+      {
+      "name": "Ken Patrick Trail",
+      "distance": "20 miles",
+      "min": "12 hours"
       }]
     },
     {
@@ -151,10 +227,20 @@
     "headline": "Where Two Deserts Meet",
     "bio": "Two distinct desert ecosystems, the Mojave and the Colorado, come together here, where a fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California.",
     "images": ["http://images5.alphacoders.com/515/515766.jpg", "http://i.imgur.com/TcdQ7lA.jpg", "http://kylehammons.com/blog/wp-content/uploads/2010/08/20100801_JoshuaTreeSunset_HDR_01-Edit.jpg"],
-    "comments": [{
-      "first_name": "Tom",
-      "last_name": "Smith",
-      "comment": "Easily my favorite place to shroom at."
+    "hikes": [{
+      "name": "49 Palms Oasis",
+      "distance": "3 miles",
+      "min": "1 hour"
+      },
+      {
+      "name": "Lost Horse Mine & Mountain",
+      "distance": "4 miles",
+      "min": "2 hours"
+      },
+      {
+      "name": "Lost Palms Oasis",
+      "distance": "7.2 miles",
+      "min": "3.5 hours"
       }]
     },
     {
@@ -168,10 +254,20 @@
     "headline": "Earth's Tallest Trees Line the California Coast",
     "bio": "Most people know Redwood as home to the tallest trees on Earth. The parks also protect vast prairies, oak woodlands, wild riverways, and nearly 40 miles of pristine coastline, all supporting a rich mosaic of wildlife diversity and cultural traditions.",
     "images": ["http://cdn.aarp.net/content/dam/travel/destination-images/redwood-national-park/2014-01/1400-redwood-national-park-california-trees.imgcache.rev1414179056909.web.1400.720.jpg", "http://cdn4.vtourist.com/19/7075318-Another_car_entering_behind_me_Yosemite_National_Park.jpg?version=2", "https://i.ytimg.com/vi/mQ9eLedGeBs/maxresdefault.jpg"],
-    "comments": [{
-      "first_name": "Juliette",
-      "last_name": "Garner",
-      "comment": "I've never felt so small! Driving through the tree was a plus."
+    "hikes": [{
+      "name": "Simpson-Reed Trail",
+      "distance": "1 mile",
+      "min": "20 min"
+      },
+      {
+      "name": "River Trail",
+      "distance": "1 mile",
+      "min": "40 min"
+      },
+      {
+      "name": "Rellim Ridge Trail",
+      "distance": "4.3 miles",
+      "min": "3 hours"
       }]
     },
     {
@@ -185,10 +281,20 @@
     "headline": "Feel Like You’re On Top of the World",
     "bio": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, and starry nights.",
     "images": ["http://ece6a217f0285d33c52d-fae70aa6c46c15c7e5fdc2683396a21c.r52.cf1.rackcdn.com/2/3/large.jpg", "http://cdn.pcwallart.com/images/rocky-mountain-national-park-summer-wallpaper-2.jpg", "https://southwestdesertlover.files.wordpress.com/2012/10/bear-lake-rocky-mountain-national-park.jpg"],
-    "comments": [{
-      "first_name": "Jim",
-      "last_name": "McMillian",
-      "comment": "So serene. Definitely worth the trip."
+    "hikes": [{
+      "name": "Bear Lake",
+      "distance": "0.6 miles",
+      "min": "25 min"
+      },
+      {
+      "name": "Ouzel Falls",
+      "distance": "2.7 miles",
+      "min": "1 hour"
+      },
+      {
+      "name": "Mount Ida",
+      "distance": "4.5 miles",
+      "min": "5 hours"
       }]
     },
     {
@@ -202,10 +308,20 @@
     "headline": "Home to the World's Largest Cacti",
     "bio": "The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
     "images": ["http://www.hikethehike.com/wp-content/uploads/2014/09/Sag-East7.jpg", "http://images.travelpod.com/tw_slides/ta00/9a1/af2/1152_12787743514-tpfil02aw-1457.jpg", "https://npca.s3.amazonaws.com/images/8767/a934745d-2d8c-439d-b298-62183aa32d96-banner.jpg?1445970567"],
-    "comments": [{
-      "first_name": "Kristen",
-      "last_name": "R.",
-      "comment": "So hot... but so cool!"
+    "hikes": [{
+      "name": "Ridge View Trail",
+      "distance": "1.6 miles",
+      "min": "1.5 hours"
+      },
+      {
+      "name": "Hope Camp Trail",
+      "distance": "1,6 miles",
+      "min": "2 hours"
+      },
+      {
+      "name": "Backcountry",
+      "distance": "",
+      "min": ""
       }]
     },
     {
@@ -219,10 +335,20 @@
     "headline": "A Land of Giants",
     "bio": "This dramatic landscape testifies to nature's size, beauty, and diversity -- huge mountains, rugged foothills, deep canyons, vast caverns, and the world's largest trees.These parks lie side by side in the southern Sierra Nevada, east of the San Joaquin Valley.",
     "images": ["http://1.bp.blogspot.com/--thukFs279I/Uaji8Ye5hnI/AAAAAAAAAkw/Obn0h_GuPbA/s1600/The-Big-Room-at-Carlsbad-Caverns-National-Park.jpg", "http://www.journeysinlightphotoblog.net/wp-content/uploads/2013/07/kings-canyon-kearsarge-pinnacles-lakes-1.jpg", "https://calizee.files.wordpress.com/2015/05/canyon-national-park-1.jpg"],
-    "comments": [{
-      "first_name": "Kim",
-      "last_name": "Hart",
-      "comment": "Find the caves, they're amazing!"
+    "hikes": [{
+      "name": "Redwood Canyon Trail",
+      "distance": "6 miles",
+      "min": "3 hours"
+      },
+      {
+      "name": "Twin Lakes Trail",
+      "distance": "7 miles",
+      "min": "5 hours"
+      },
+      {
+      "name": "Bubbs Creek Trail",
+      "distance": "4.5 miles",
+      "min": "3 hours"
       }]
     },
     {
@@ -236,10 +362,20 @@
     "headline": "World's Greatest Concentration of Geysers",
     "bio": "Old Faithful and the majority of the world's geysers are preserved here. They are the main reason the park was established in 1872 as America's first national park — an idea that spread worldwide. A mountain wilderness, home to grizzly bears, wolves, and herds of bison and elk, the park is the core of one of the last, nearly intact ecosystems in the Earth’s temperate zone.",
     "images": ["http://feel-planet.com/wp-content/uploads/2015/05/Yellowstone-National-Park.jpg", "http://i.imgur.com/5sqm3PM.jpg", "https://tribwpix.files.wordpress.com/2015/08/grizzly-bear-yellowstone.jpg", "http://cdn.aarp.net/content/dam/travel/destination-images/yellowstone/hero/152887704_1400x720.imgcache.rev1409167696142.web.1400.720.jpg"],
-    "comments": [{
-      "first_name": "Ryan",
-      "last_name": "Johnson",
-      "comment": "This has been on my bucket list for a long time. So glad I finally made it!"
+    "hikes": [{
+      "name": "Mystic Falls",
+      "distance": "2.4 miles",
+      "min": "1 hour"
+      },
+      {
+      "name": "Fairy Falls",
+      "distance": "6 miles",
+      "min": "3.5 hours"
+      },
+      {
+      "name": "Yellowstone Lake Overlook",
+      "distance": "1.5 miles",
+      "min": "3 hours"
       }]
     },
     {
@@ -253,10 +389,20 @@
     "headline": "Sheer Cliffs & Vast Valleys",
     "bio": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.Yosemite is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
     "images": ["http://www.craigwolf.com/news/uploaded_images/WY5T6500-747443.jpg", "https://9to5mac.files.wordpress.com/2014/08/yosemite-2.jpg", "http://footage.framepool.com/shotimg/qf/662510359-yosemite-falls-bridalveil-falls-yosemite-yosemite-national-park-nature-reserve.jpg"],
-    "comments": [{
-      "first_name": "Kim",
-      "last_name": "H",
-      "comment": "One of my favorite places on earth."
+    "hikes": [{
+      "name": "Bridalveil Fall Trail",
+      "distance": "0.5 miles",
+      "min": "1 hour"
+      },
+      {
+      "name": "Valley Loop Trail",
+      "distance": "1.6 miles",
+      "min": "2 hours"
+      },
+      {
+      "name": "Half Dome Trail",
+      "distance": "14 miles",
+      "min": "9 hours"
       }]
     },
     {
@@ -270,10 +416,20 @@
     "headline": "Utah's First National Park",
     "bio": "Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.",
     "images": ["https://media.deseretdigital.com/file/0391881999?crop=top:0%7Cleft:0%7Cwidth:1260%7Cheight:670%7Cgravity:Center&resize=width:1260&order=resize,crop&c=14&a=c856f78c", "http://images.trvl-media.com/media/content/shared/images/travelguides/Zion-National-Park-and-vicinity-184036-smallTabletRetina.jpg", "http://mommypoints.boardingarea.com/wp-content/uploads/2013/11/DSCN5894.jpg"],
-    "comments": [{
-      "first_name": "Christine",
-      "last_name": "O.",
-      "comment": "Great hiking!"
+    "hikes": [{
+      "name": "Archeology Trail",
+      "distance": "0.4 miles",
+      "min": "30 min"
+      },
+      {
+      "name": "Kayenta Trail",
+      "distance": "2 miles",
+      "min": "2 hours"
+      },
+      {
+      "name": "The Narrows",
+      "distance": "9.4 miles",
+      "min": "8 hours"
       }]
     }
   ]

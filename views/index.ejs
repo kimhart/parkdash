@@ -36,7 +36,7 @@
     <div class="row header">
       <div class="col-md-12 parkdash-logo">
         <h1 id="logo">ParkDash<span class="glyphicon glyphicon-tree-conifer glyphicon-align-left" aria-hidden="true" style="color:#86b300"></span></h1>
-        <p class="tagline"><em>A snapshot of US National Parks</em></p>
+        <p class="tagline"><em>US National Park Dashboard</em></p>
         <div class="dropdown">
           <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
           <span class="caret"></span></button>
@@ -93,13 +93,13 @@
                   <p>{{parks.selected.bio}}</p>
                 </div>
               </div> <!-- park-details -->
-              <h3 style="font-family: 'Fjalla One', sans-serif" class="comment">Comments <span class="glyphicon glyphicon-comment glyphicon-align-left" aria-hidden="true"></span></h3>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="panel-title">{{parks.selected.comments[0].first_name}} {{parks.selected.comments[0].last_name}}</div>
-                </div>
-                <div class="panel-body">
-                  <em>"{{parks.selected.comments[0].comment}}"</em>
+              <br>
+              <div class="park-details2">
+                <div class="overlay">
+                  <h3 style="font-family: 'Fjalla One', sans-serif" class="comment">Popular Hikes</h3>
+                  <p><strong><span style="color: #96a25d">EASY: </span></strong>{{parks.selected.hikes[0].name}}, {{parks.selected.hikes[0].distance}},&nbsp;{{parks.selected.hikes[0].min}}</p>
+                  <p><strong><span style="color: #80bfff">MODERATE: </span></strong>{{parks.selected.hikes[1].name}}, {{parks.selected.hikes[1].distance}},&nbsp;{{parks.selected.hikes[1].min}}</p>
+                  <p><strong><span style="color: #cc0000">STRENUOUS: </span></strong>{{parks.selected.hikes[2].name}}, {{parks.selected.hikes[2].distance}},&nbsp;{{parks.selected.hikes[2].min}}</p>
                 </div>
               </div>
             </div> <!-- col-md-4 -->
