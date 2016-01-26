@@ -272,7 +272,11 @@ a.forecast-link {
 }
 
 div.carousel-control.right, .carousel-control.left {
-  background-image:none;
+  background-image: none;
+}
+
+#carousel-example-generic {
+  background-image: none;
 }
 
 #carousel-example-generic.carousel.slide {

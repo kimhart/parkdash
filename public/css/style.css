@@ -265,8 +265,12 @@ a.forecast-link {
   width: 700px;
 }
 
+#carousel-example-generic {
+  background-image: none;
+}
+
 .carousel-control.right, .carousel-control.left {
-  background-image:none;
+  background-image: none;
 }
 
 iframe {
