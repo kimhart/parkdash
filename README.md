@@ -31,7 +31,7 @@ A user will be able to:
 * View a list of popular hikes ranked from easy, to moderate, to strenuous.
 * See a live Instagram feed of photos tagged at the park.
 
-#### Goals for Future User Stories
+### Goals for Future User Stories
 
 A user will be able to:
 
