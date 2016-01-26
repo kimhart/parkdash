@@ -28,7 +28,7 @@
             <h4 class="modal-title"><strong>Explore:</strong></h4>
           </div> <!-- modal header -->
           <div class="modal-body">
-            <li class="parks-in-modal" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather(); parks.getForecast()" data-dismiss="modal">{{park.name}}</li>
+            <li class="parks-in-modal" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.getWeather(); parks.getForecast(); parks.showInsta()" data-dismiss="modal">{{park.name}}</li>
           </div> <!-- modal body -->
         </div> <!-- modal content -->
       </div> <!-- modal dialogue -->
@@ -41,7 +41,7 @@
           <button id="dropdown-btn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">Choose a Park
           <span class="caret"></span></button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.showInsta(); parks.getWeather(); parks.getForecast()">{{park.name}}</li>
+            <li class="dropdown-choice" ng-repeat="park in parks.all track by $index" ng-click="parks.show(park); parks.initMap(); parks.getWeather(); parks.getForecast(); parks.showInsta()">{{park.name}}</li>
           </ul>
         </div> <!-- dropdown -->
       </div> <!-- col-md-12 parkdash-logo -->
