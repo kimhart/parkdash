@@ -4,6 +4,10 @@
 
 Welcome to ParkDash, an interactive dashboard of quick information about the US National Parks. This single-page app makes trip-planning more efficient by providing important info about each park at-a-glance — no searching the NPS websites involved. Enjoy!
 
+### View ParkDash in Action
+
+Click [here](http://young-taiga-19316.herokuapp.com) to view now!
+
 
 ### Technologies Used
 
