@@ -1,5 +1,22 @@
 [
-{
+  {
+    "name": "ARCHES",
+    "state": "Utah",
+    "zip": 84532,
+    "trail_map_url": "http://www.mapcruzin.com/download-national-park-maps/bryc_vist94.jpg",
+    "established": 1929,
+    "latitude": 38.6833,
+    "longitude": -109.5667,
+    "headline": "A Red Rock Wonderland",
+    "bio": "Visit Arches and discover a landscape of contrasting colors, landforms and textures unlike any other in the world. The park has over 2,000 natural stone arches, in addition to hundreds of soaring pinnacles, massive fins and giant balanced rocks. This red rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+    "images": ["http://cdn.aarp.net/content/dam/travel/destination-images/arches-national-park/2014-01/1400-arches-national-park-sunrise.imgcache.rev1390493613036.web.1400.720.jpg", "http://cdn.bigbangfish.com/555/Arches-National-Park-wallpapers/Arches-National-Park-wallpapers-1.jpg", "http://www.nps.gov/common/uploads/photogallery/20140210/park/arch/20B32857-155D-451F-679A44791A20187B/20B32857-155D-451F-679A44791A20187B.jpg"],
+    "comments": [{
+      "first_name": "Joe",
+      "last_name": "Shmoe",
+      "comment": "Love this place!"
+      }]
+    },
+  {
     "name": "BRYCE CANYON",
     "state": "Utah",
     "zip": 84764,
@@ -14,6 +31,40 @@
       "first_name": "P.",
       "last_name": "Sherman",
       "comment": "This place is super rad!"
+      }]
+    },
+    {
+    "name": "CANYONLANDS",
+    "state": "Utah",
+    "zip": 84532,
+    "trail_map_url": "http://alexfilatovphoto.com/blog/wp-content/uploads/2011/04/Island-in-the-sky-map.jpg",
+    "established": 1964,
+    "latitude": 38.1669,
+    "longitude": -109.7597,
+    "headline": "A Land Divided by Rivers",
+    "bio": "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: the Island in the Sky, the Needles, the Maze, and the rivers themselves. These areas share a primitive desert atmosphere, but each offers different opportunities for sightseeing and adventure.",
+    "images": ["https://media.deseretdigital.com/file/d73a7e3645?crop=top:0%7Cleft:0%7Cwidth:1260%7Cheight:670%7Cgravity:Center&resize=width:1260&order=resize,crop&c=14&a=c856f78c", "http://www.adventurewomen.com/wp-content/uploads/2014/09/WP-Colorado-R-at-Dead-Horse-Pt-State-Pk-iStock_000009272857_Medium.jpg", "http://images.boomsbeat.com/data/images/full/73698/g2-jpg.jpg"],
+    "comments": [{
+      "first_name": "Linda",
+      "last_name": "S.",
+      "comment": "Like walking straight into an old western movie."
+      }]
+    },
+    {
+    "name": "CRATER LAKE",
+    "state": "Oregon",
+    "zip": 97604,
+    "trail_map_url": "http://www.joshshalek.com/wp-content/uploads/2013/09/crater-lake-map.jpg",
+    "established": 1902,
+    "latitude": 42.9500,
+    "longitude": -122.1000,
+    "headline": "Keep Crater Blue",
+    "bio": "Crater Lake has inspired people for thousands of years. No place else on earth combines a deep, pure lake, so blue in color; sheer surrounding cliffs, almost two thousand feet high; two picturesque islands; and a violent volcanic past. It is a place of immeasurable beauty, and an outstanding outdoor laboratory and classroom.",
+    "images": ["https://voyagenation.com/voyages/C/Crater-Lake-Fort-Klamath-Oregon.jpg", "https://cdn.photographylife.com/wp-content/uploads/2015/08/Crater-lake-dawn1.jpg", "http://book.amtrakvacations.com/images/Crater%20Lake%20_%20Lake.jpg"],
+    "comments": [{
+      "first_name": "Eric",
+      "last_name": "Smith",
+      "comment": "Picture perfect."
       }]
     },
     {
@@ -39,6 +90,57 @@
       }]
     },
     {
+    "name": "EVERGLADES",
+    "state": "Florida",
+    "zip": 33030,
+    "trail_map_url": "http://keylargoholidayrental.com/wp-content/uploads/2014/01/everglades-national-park-map.jpg",
+    "established": 1947,
+    "latitude": 25.3167,
+    "longitude": -80.9333,
+    "headline": "Largest Subtropical Wilderness in the US",
+    "bio": "Everglades National Park protects an unparalleled landscape that provides important habitat for numerous rare and endangered species like the manatee,  American crocodile, and the elusive Florida panther.",
+    "images": ["http://images6.alphacoders.com/368/368375.jpg", "http://cdn.aarp.net/content/dam/travel/destination-images/florida/everglades-national-park/1400-everglades-national-park-tree.imgcache.rev1409336294425.web.1400.720.jpg", "http://40.media.tumblr.com/67e4dc6d27897a9696a0c64def49f3d7/tumblr_nkgnrglZLM1tw9wqro1_1280.jpg", "http://cdn2.hubspot.net/hubfs/156834/everglades_national_park_florida-wallpaper.jpg"],
+    "comments": [{
+      "first_name": "Kim",
+      "last_name": "Hart",
+      "comment": "Swam here with the manatees — terrifying but awesome."
+      }]
+    },
+    {
+    "name": "GLACIER",
+    "state": "Montana",
+    "zip": 59434,
+    "trail_map_url": "https://s-media-cache-ak0.pinimg.com/736x/da/55/a2/da55a210dc600ab897ba96378bb68c9a.jpg",
+    "established": 1910,
+    "latitude": 48.6967,
+    "longitude": -113.7183,
+    "headline": "Crown of the Continent",
+    "bio": "Come and experience Glacier's pristine forests, alpine meadows, rugged mountains, and spectacular lakes. With over 700 miles of trails, Glacier is a hiker's paradise for adventurous visitors seeking wilderness and solitude. Relive the days of old through historic chalets, lodges, transportation, and stories of Native Americans.",
+    "images": ["http://visitglacierpark.com/wp-content/uploads/2014/12/188.jpg", "http://static.thousandwonders.net/Glacier.National.Park.original.494.jpg", "http://images.huffingtonpost.com/2014-04-16-891A0170.jpg"],
+    "comments": [{
+      "first_name": "Steve",
+      "last_name": "P.",
+      "comment": "So many mountain goats!"
+      }]
+    },
+    {
+    "name": "GRAND CANYON",
+    "state": "Arizona",
+    "zip": 86023,
+    "trail_map_url": "http://andrewskurka.com/wp-content/uploads/routemap.jpg",
+    "established": 1919,
+    "latitude": 36.1000,
+    "longitude": -112.1000,
+    "headline": "The Beast",
+    "bio": "Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.",
+    "images": ["http://travel.aarp.org/content/dam/travel/destination-images/grand-canyon-national-park/2014-01/1400-grand-canyon-national-park-hiker.jpg", "http://i1.tietuku.com/a06b4d77bef17026.jpg", "http://mediad.publicbroadcasting.net/p/knau/files/201111/3226319-477493584.JPG"],
+    "comments": [{
+      "first_name": "Claire",
+      "last_name": "Hart",
+      "comment": "Go rafting through the Colorado River at the bottom, it's unreal."
+      }]
+    },
+    {
     "name": "JOSHUA TREE",
     "state": "California",
     "zip": 92252,
@@ -50,11 +152,6 @@
     "bio": "Two distinct desert ecosystems, the Mojave and the Colorado, come together here, where a fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California.",
     "images": ["http://images5.alphacoders.com/515/515766.jpg", "http://i.imgur.com/TcdQ7lA.jpg", "http://kylehammons.com/blog/wp-content/uploads/2010/08/20100801_JoshuaTreeSunset_HDR_01-Edit.jpg"],
     "comments": [{
-      "first_name": "Chris",
-      "last_name": "J.",
-      "comment": "Legendary."
-      }, 
-      {
       "first_name": "Tom",
       "last_name": "Smith",
       "comment": "Easily my favorite place to shroom at."
@@ -78,6 +175,40 @@
       }]
     },
     {
+    "name": "ROCKY MOUNTAIN",
+    "state": "Colorado",
+    "zip": 80517,
+    "trail_map_url": "http://www.rmnp.com/Maps/RMNP-Map-BearLakeRoad.JPG",
+    "established": 1915,
+    "latitude": 40.3333,
+    "longitude": -105.7089,
+    "headline": "Feel Like You’re On Top of the World",
+    "bio": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, and starry nights.",
+    "images": ["http://ece6a217f0285d33c52d-fae70aa6c46c15c7e5fdc2683396a21c.r52.cf1.rackcdn.com/2/3/large.jpg", "http://cdn.pcwallart.com/images/rocky-mountain-national-park-summer-wallpaper-2.jpg", "https://southwestdesertlover.files.wordpress.com/2012/10/bear-lake-rocky-mountain-national-park.jpg"],
+    "comments": [{
+      "first_name": "Jim",
+      "last_name": "McMillian",
+      "comment": "So serene. Definitely worth the trip."
+      }]
+    },
+    {
+    "name": "SAGUARO",
+    "state": "Arizona",
+    "zip": 85730,
+    "trail_map_url": "http://npmaps.com/wp-content/uploads/saguaro-map-west.jpg",
+    "established": 1940,
+    "latitude": 32.2500,
+    "longitude": -110.5000,
+    "headline": "Home to the World's Largest Cacti",
+    "bio": "The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
+    "images": ["http://www.hikethehike.com/wp-content/uploads/2014/09/Sag-East7.jpg", "http://images.travelpod.com/tw_slides/ta00/9a1/af2/1152_12787743514-tpfil02aw-1457.jpg", "https://npca.s3.amazonaws.com/images/8767/a934745d-2d8c-439d-b298-62183aa32d96-banner.jpg?1445970567"],
+    "comments": [{
+      "first_name": "Kristen",
+      "last_name": "R.",
+      "comment": "So hot... but so cool!"
+      }]
+    },
+    {
     "name": "SEQUOIA AND KINGS CANYON",
     "state": "California",
     "zip": 93271,
@@ -95,6 +226,23 @@
       }]
     },
     {
+    "name": "YELLOWSTONE",
+    "state": "Idaho/Montana/Wyoming",
+    "zip": 82190,
+    "trail_map_url": "http://www.rusticinnatjh.com/wp-content/uploads/2013/09/The-Rustic-Inn-Yellowstone-Trail-Map.jpg",
+    "established": 1872,
+    "latitude": 44.6000,
+    "longitude": -110.5000,
+    "headline": "World's Greatest Concentration of Geysers",
+    "bio": "Old Faithful and the majority of the world's geysers are preserved here. They are the main reason the park was established in 1872 as America's first national park — an idea that spread worldwide. A mountain wilderness, home to grizzly bears, wolves, and herds of bison and elk, the park is the core of one of the last, nearly intact ecosystems in the Earth’s temperate zone.",
+    "images": ["http://feel-planet.com/wp-content/uploads/2015/05/Yellowstone-National-Park.jpg", "http://i.imgur.com/5sqm3PM.jpg", "https://tribwpix.files.wordpress.com/2015/08/grizzly-bear-yellowstone.jpg", "http://cdn.aarp.net/content/dam/travel/destination-images/yellowstone/hero/152887704_1400x720.imgcache.rev1409167696142.web.1400.720.jpg"],
+    "comments": [{
+      "first_name": "Ryan",
+      "last_name": "Johnson",
+      "comment": "This has been on my bucket list for a long time. So glad I finally made it!"
+      }]
+    },
+    {
     "name": "YOSEMITE",
     "state": "California",
     "zip": 95389,
@@ -109,6 +257,23 @@
       "first_name": "Kim",
       "last_name": "H",
       "comment": "One of my favorite places on earth."
+      }]
+    },
+    {
+    "name": "ZION",
+    "state": "Utah",
+    "zip": 84767,
+    "trail_map_url": "http://cliffroselodge.com/wp-content/uploads/2013/09/zion-area-map.png",
+    "established": 1890,
+    "latitude": 37.2026,
+    "longitude": -112.9878,
+    "headline": "Utah's First National Park",
+    "bio": "Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.",
+    "images": ["https://media.deseretdigital.com/file/0391881999?crop=top:0%7Cleft:0%7Cwidth:1260%7Cheight:670%7Cgravity:Center&resize=width:1260&order=resize,crop&c=14&a=c856f78c", "http://images.trvl-media.com/media/content/shared/images/travelguides/Zion-National-Park-and-vicinity-184036-smallTabletRetina.jpg", "http://mommypoints.boardingarea.com/wp-content/uploads/2013/11/DSCN5894.jpg"],
+    "comments": [{
+      "first_name": "Christine",
+      "last_name": "O.",
+      "comment": "Great hiking!"
       }]
     }
   ]
