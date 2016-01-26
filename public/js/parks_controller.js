@@ -61,7 +61,27 @@ function ParksController($http) {
       var $forecastDiv = $('#10forecast').html('<a href="' + forecastLink + '" target="_blank" class="forecast-link">View 10-Day Forecast</a>')
       }
     });
-  }
+  };
+
+  parks.getForecast = function(){
+    $.ajax({
+    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      var today = parsed_json.forecast.simpleforecast.forecastday[0];
+      var weekday = today.date.weekday;
+      var monthShort = today.date.monthname_short + ".";
+      var date = today.date.day;
+      var high_f = today.high.fahrenheit;
+      var low_f = today.low.fahrenheit;
+      var high_c = today.high.celsius;
+      var low_c = today.low.celsius;
+
+      var $dateDiv = $('#date').html('<h3>' + weekday + ', ' + monthShort + ' ' + date + '</h3>')
+      var $highLowDiv = $('#high').html('H: ' + high_f + '&#176 F / L: ' + low_f + '&#176 F');
+      }
+    });
+  };
 
   parks.switchToC = function(){
     $.ajax({
@@ -114,28 +134,6 @@ function ParksController($http) {
       }
     });
   };
-
-
-  parks.getForecast = function(){
-    $.ajax({
-    url : "http://api.wunderground.com/api/f7c25337aea3b20c/geolookup/forecast/q/"+parks.selected.zip+".json",
-    dataType : "jsonp",
-    success : function(parsed_json) {
-      var today = parsed_json.forecast.simpleforecast.forecastday[0];
-      var weekday = today.date.weekday;
-      var monthShort = today.date.monthname_short + ".";
-      var date = today.date.day;
-      var high_f = today.high.fahrenheit;
-      var low_f = today.low.fahrenheit;
-      var high_c = today.high.celsius;
-      var low_c = today.low.celsius;
-
-      var $dateDiv = $('#date').html('<h3>' + weekday + ', ' + monthShort + ' ' + date + '</h3>')
-      var $highLowDiv = $('#high').html('H: ' + high_f + '&#176 F / L: ' + low_f + '&#176 F');
-      }
-    });
-  };
-
 
   parks.showInsta = function(){
     var $instaDiv = $('#instagram-div');
