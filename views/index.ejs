@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="ParksApp">
 <head>
-  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>ParkDash</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
@@ -13,6 +13,7 @@
   <script src="js/park.js"></script>
   <script src="js/cycle.js"></script>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 600px)" href="/css/mobile-device.css" />
   <link rel="stylesheet" href="/css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,800' rel='stylesheet' type='text/css'>
@@ -82,11 +83,13 @@
           <div class="row">
             <div class="break col-md-12">
               <div class="title"><h1>{{parks.selected.name}}</h1></div>
-              <h3 style="font-family: 'Fjalla One', sans-serif;"><span style="color: #879254">State:</span> {{parks.selected.state}} &nbsp;&nbsp;&nbsp; <span style="color: #879254">Established:</span> {{parks.selected.established}}</h3>
+                <div class="established">
+                  <h3 style="font-family: 'Fjalla One', sans-serif;"><span style="color: #879254">State:</span> {{parks.selected.state}} &nbsp;&nbsp;&nbsp; <span style="color: #879254">Established:</span> {{parks.selected.established}}</h3>
+                </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 shift">
               <div class="park-details">
                 <div class="overlay">
                   <h3 style="font-family: 'Fjalla One', sans-serif;">{{parks.selected.headline}}</h3>
@@ -102,6 +105,7 @@
                   <p><strong><span style="color: #cc0000">STRENUOUS: </span></strong>{{parks.selected.hikes[2].name}}, {{parks.selected.hikes[2].distance}},&nbsp;{{parks.selected.hikes[2].min}}</p>
                 </div>
               </div>
+              <br>
             </div> <!-- col-md-4 -->
             <div class="col-md-4">
               <div class="weather-container">
@@ -123,7 +127,8 @@
                 </div> <!--  overlay -->
               </div> <!-- weather container -->
             </div> <!-- col-md-2 -->
-            <div class="col-md-4">
+            <br>
+            <div class="col-md-4 insta-shift">
               <div class="insta-container">
                 <div id="instagram-hashtag"></div>
                 <div id="instagram-div"></div>
