@@ -71,6 +71,7 @@ html, body {
 
 #dropdown-btn{
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .dropdown-choice:hover {
@@ -141,7 +142,7 @@ html, body {
 div.modal-dialog {
   background-color: white;
   margin-top: 10px;
-  width: 70%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   margin-top: 100px;
@@ -151,6 +152,11 @@ div.modal-dialog {
 div.modal-content {
   width: 100%;
   max-width: 100%;
+  overflow: auto;
+}
+
+.menu {
+  margin: 0 auto;
 }
 
 .modal-header, .modal-content {
@@ -225,6 +231,7 @@ h5.comment {
   margin-top: 10px;
   width: 40px;
   height: 30px;
+  size: 10px;
 }
 
 #icon-background {
@@ -248,20 +255,21 @@ a.forecast-link {
 }
 
 #trail-map-image {
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
   border: 1px solid black;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 #trails-modal {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin: 0 auto;
 }
 
 #trails-modal-img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
